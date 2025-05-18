@@ -19,7 +19,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
    link="",
 }) => {
    return (
-      <Link href={link}>
+      <Link href={link} className="flex flex-col items-center justify-center">
          <Card className="min-w-xs bg-card text-card-foreground shadow-md max-w-sm gap-0 p-0 pb-4 border-primary">
             <CardHeader className="p-0">
                <div className="relative w-full h-40 overflow-hidden rounded-t-md">

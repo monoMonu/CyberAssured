@@ -3,47 +3,46 @@ import Link from 'next/link';
 
 const Footer = () => {
    return (
-      <footer className="bg-muted text-foreground pt-10 md:pt-12"> {/* Increased overall padding */}
-         <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-screen-xl mx-auto"> {/* Increased gap */}
-               {/* Branding and Contact Section */}
-               <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      <footer className="bg-muted text-foreground pt-10 md:pt-12">
+         <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-screen-xl mx-auto"> 
+               <div className="flex flex-col items-center md:items-start text-center md:text-left px-8 lg:px-4">
                   <Link href="/" passHref>
                      <img
-                        src="/logo.svg" // Replace with your actual logo
+                        src="/logo.svg"
                         alt="CyberAssured"
-                        height={75} // Slightly increased height for prominence
-                        width={200} // Slightly increased width for prominence
-                        className="mb-8" // More space below the logo
+                        height={75}
+                        width={200} 
+                        className="mb-8" 
                      />
                   </Link>
                   <a
-                     href="tel:+1234567890" // Replace with your actual phone number
-                     className="text-primary mb-6 text-xl font-bold hover:text-secondary transition-colors duration-300" // Larger, bolder, smoother transition
+                     href="tel:+1234567890" 
+                     className="text-primary mb-6 text-xl font-bold hover:text-secondary transition-colors duration-300" 
                   >
                      +1 (234) 567-890
                   </a>
-                  <div className="flex space-x-6 justify-center md:justify-start"> {/* Increased space between icons */}
+                  <div className="flex space-x-6 justify-center md:justify-start">
                      <a
-                        href="https://www.linkedin.com/company/cyberassured" // Replace with your LinkedIn link
+                        href="https://www.linkedin.com/" 
                         target="_blank"
-                        rel="noopener noreferrer" // Added noreferrer for security best practice
-                        className="text-primary hover:text-secondary transition-colors duration-300" // Smoother transition
+                        rel="noopener noreferrer" 
+                        className="text-primary hover:text-secondary transition-colors duration-300" 
                      >
-                        <Linkedin size={28} /> {/* Slightly larger icons */}
+                        <Linkedin size={28} />
                      </a>
                      <a
-                        href="https://twitter.com/cyberassured" // Replace with your Twitter link
+                        href="https://twitter.com/" 
                         target="_blank"
-                        rel="noopener noreferrer" // Added noreferrer
-                        className="text-primary hover:text-secondary transition-colors duration-300" // Smoother transition
+                        rel="noopener noreferrer" 
+                        className="text-primary hover:text-secondary transition-colors duration-300" 
                      >
-                        <Twitter size={28} /> {/* Slightly larger icons */}
+                        <Twitter size={28} />
                      </a>
                   </div>
                </div>
 
-               <div className="grid grid-cols-2 md:grid-cols-4 col-span-2 gap-y-12 gap-x-8 md:gap-x-12"> 
+               <div className="grid grid-cols-2 md:grid-cols-4 col-span-2 gap-y-12 gap-x-8 md:gap-x-12 px-4 justify-center text-center"> 
                   <nav>
                      <h3 className="text-base font-semibold text-primary mb-5 border-b-2 border-primary pb-0.5 inline-block">Our Services</h3>
                      <ul className="space-y-1.5 mt-0"> 
@@ -86,7 +85,7 @@ const Footer = () => {
                </div>
             </div>
 
-            <div className="mt-16 pt-5 border-t border-accent bg-secondary">
+            <div className="mt-16 pt-5 border-t border-accent bg-secondary px-10">
                <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground space-y-4 max-w-screen-xl mx-auto">
                   <div>
                      <Link href="/privacy-policy" className="text-background hover:text-foreground transition-colors duration-200">Privacy Policy</Link>
