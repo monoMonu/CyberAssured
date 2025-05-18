@@ -7,7 +7,6 @@ import Footer from "@/sections/Footer";
 import HeroCarousel from "@/sections/HeroSec";
 import ManagedServices from "@/sections/ManagedServices";
 import SecurityInsightsSection from "@/sections/SecurityInsights";
-import Image from "next/image";
 
 export default function Home() {
 
