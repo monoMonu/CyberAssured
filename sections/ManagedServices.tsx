@@ -1,66 +1,15 @@
-import FeaturedCard from '@/components/FeatureCard'
+import ManagedServicesCard from '@/components/ManagedServicesCard'
 import Link from 'next/link'
 import React from 'react'
 
 function ManagedServices() {
-
-   const managedServices = [
-      {
-         title: 'Tropical Shirts',
-         description: 'Breezy and bold summer patterns. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Essential SOC\'s',
-         color: 'primary',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Professional SOC\'s',
-         color: 'primary',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Enterprise SOC\'s',
-         color: 'primary',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Defender SOC\'s',
-         color: 'primary',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Attacker SOC\'s',
-         color: 'primary',
-      },
-   ]
-
    return (
-      <section className="py-16 bg-muted">
+      <section className="py-16">
          <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-primary">
+            <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
                Managed Services
             </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-               {managedServices.map((item, idx) => (
-                  <div className="flex justify-center items-center max-w-sm" key={idx}>
-                     <FeaturedCard
-                        title={item.title}
-                        description={item.description}
-                        image={item.image}
-                        cta={item.cta}
-                        color='primary'
-                     />
-                  </div>
-               ))}
-            </div>
+            <ManagedServicesCard />
          </div>
          <div className="mt-12 text-center">
             <Link

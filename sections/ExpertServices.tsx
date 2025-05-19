@@ -1,29 +1,9 @@
+import ExpertServicesCard from '@/components/ExpertServicesCard'
 import FeaturedCard from '@/components/FeatureCard'
 import Link from 'next/link'
 import React from 'react'
 
 function ExpertServices() {
-
-   const expertServices = [
-      {
-         title: 'Tropical Shirts',
-         description: 'Breezy and bold summer patterns. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Essential SOC\'s',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Professional SOC\'s',
-      },
-      {
-         title: 'Beach Footwear',
-         description: 'Flip-flops, sandals and more for the beach. Breezy and bold summer patterns. Breezy and bold summer patterns.',
-         image: '/cyber-incident-calculator-icon.svg',
-         cta: 'Enterprise SOC\'s',
-      },
-   ]
 
    return (
       <section className="py-16 bg-background">
@@ -31,19 +11,7 @@ function ExpertServices() {
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-secondary">
                Expert Services
             </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-               {expertServices.map((item, idx) => (
-                  <div className="flex justify-center items-center max-w-sm" key={idx}>
-                     <FeaturedCard
-                        title={item.title}
-                        description={item.description}
-                        image={item.image}
-                        cta={item.cta}
-                        color='secondary'
-                     />
-                  </div>
-               ))}
-            </div>
+            <ExpertServicesCard />
          </div>
          <div className="mt-12 text-center">
             <Link

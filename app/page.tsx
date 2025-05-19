@@ -1,9 +1,7 @@
 import FeaturedCard from "@/components/FeatureCard";
-import Navbar from "@/components/Navbar";
 import Benefits from "@/sections/Benefits";
 import CustomerPledges from "@/sections/CustomerPledge";
 import ExpertServices from "@/sections/ExpertServices";
-import Footer from "@/sections/Footer";
 import HeroCarousel from "@/sections/HeroSec";
 import ManagedServices from "@/sections/ManagedServices";
 import SecurityInsightsSection from "@/sections/SecurityInsights";
@@ -24,7 +22,6 @@ export default function Home() {
   ];
   return (
     <section className="relative w-full">
-      <Navbar />
       <HeroCarousel />
       {/* Where to start sec */}
       <section className="py-16 pb-10 bg-muted">
@@ -55,7 +52,6 @@ export default function Home() {
       <ExpertServices />
       <Benefits />
       <CustomerPledges />
-      <Footer />
     </section>
   );
 }
