@@ -24,7 +24,7 @@ export default function Home() {
     <section className="relative w-full">
       <HeroCarousel />
       {/* Where to start sec */}
-      <section className="py-16 pb-10 bg-muted">
+      <section className="pt-12 bg-muted">
         <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-2 text-primary">
             Where to Start

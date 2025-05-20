@@ -24,7 +24,7 @@ const pledges = [
 
 export default function CustomerPledges() {
   return (
-    <section className="text-foreground">
+    <section className="text-foreground py-8">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-primary">Our Customer Pledge</h2>
         <p className="text-muted-foreground mb-12 max-w-3xl mx-auto text-base">

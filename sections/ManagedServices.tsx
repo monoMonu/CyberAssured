@@ -4,14 +4,14 @@ import React from 'react'
 
 function ManagedServices() {
    return (
-      <section className="py-16">
+      <section className="py-8">
          <div className="mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
                Managed Services
             </h2>
             <ManagedServicesCard />
          </div>
-         <div className="mt-12 text-center">
+         <div className="mt-8 text-center">
             <Link
                href="/insights"
                className="group inline-block relative text-secondary text-base transition-all duration-300 ease-in-out transform hover:scale-105"

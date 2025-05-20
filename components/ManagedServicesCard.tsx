@@ -42,7 +42,7 @@ function ManagedServicesCard() {
    ]
 
    return (
-      <div className="flex flex-wrap justify-center gap-5 mt-8">
+      <div className="flex flex-wrap justify-center gap-x-2 mt-8">
          {managedServicesCard.map((item, idx) => (
             <FeaturedCard
                key={idx}

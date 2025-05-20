@@ -6,14 +6,14 @@ import React from 'react'
 function ExpertServices() {
 
    return (
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
          <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-secondary">
                Expert Services
             </h2>
             <ExpertServicesCard />
          </div>
-         <div className="mt-12 text-center">
+         <div className="mt-8 text-center">
             <Link
                href="/insights"
                className="group inline-block relative text-primary text-base transition-all duration-300 ease-in-out transform hover:scale-105"

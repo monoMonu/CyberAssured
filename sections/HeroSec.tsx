@@ -11,12 +11,47 @@ import 'swiper/css/pagination';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
-const sliderImages = [
-   { id: 1, src: '/lone-tree.jpg', alt: 'Promotional image for summer sale showing summer vibes' },
-   { id: 2, src: '/insight-1.jpg', alt: 'Promotional image showcasing cool products on sale' },
-   { id: 3, src: '/insight-1.jpg', alt: 'Promotional image with a beach theme for the sale' },
-   { id: 4, src: '/insight-1.jpg', alt: 'Promotional image highlighting hot deals available' },
-   { id: 5, src: '/insight-1.jpg', alt: 'Promotional image indicating limited stock for sale items' },
+const sliders = [
+   { 
+      id: 1, 
+      src: '/lone-tree.jpg', 
+      alt: 'Promotional slider for summer sale showing summer vibes' ,
+      title: "Not all heroes wear capes",
+      subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
+      cta: "Cyber Zero",
+   },
+   { 
+      id: 2, 
+      src: '/insight-1.jpg', 
+      alt: 'Promotional slider showcasing cool products on sale',
+      title: "Not all heroes wear capes",
+      subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
+      cta: "Cyber Zero",
+   },
+   { 
+      id: 3, 
+      src: '/insight-1.jpg', 
+      alt: 'Promotional slider with a beach theme for the sale',
+      title: "Not all heroes wear capes",
+      subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
+      cta: "Cyber Zero",
+   },
+   { 
+      id: 4, 
+      src: '/insight-1.jpg', 
+      alt: 'Promotional slider highlighting hot deals available',
+      title: "Not all heroes wear capes",
+      subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
+      cta: "Cyber Zero",
+   },
+   { 
+      id: 5, 
+      src: '/insight-1.jpg', 
+      alt: 'Promotional slider indicating limited stock for sale items',
+      title: "Not all heroes wear capes",
+      subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
+      cta: "Cyber Zero",
+   },
 ];
 
 const HomeHeroBGSlider = () => {
@@ -40,28 +75,28 @@ const HomeHeroBGSlider = () => {
             speed={800}
             className="h-full w-full"
          >
-            {sliderImages.map((image) => (
-               <SwiperSlide key={image.id}>
+            {sliders.map((slider) => (
+               <SwiperSlide key={slider.id}>
                   <div
                      className="relative h-full w-full bg-cover bg-center"
-                     style={{ backgroundImage: `url(${image.src})` }}
+                     style={{ backgroundImage: `url(${slider.src})` }}
                      role="img"
-                     aria-label={image.alt}
+                     aria-label={slider.alt}
                   >
                      {/* Overlay ONLY on the background */}
                      <div className="absolute inset-0 bg-foreground opacity-50 z-0" />
 
                      {/* Foreground Content */}
                      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 space-y-6">
-                        <h1 className="text-4xl md:text-6xl font-bold">
-                           Summer Sale is On!
+                        <h1 className="text-4xl md:text-7xl font-bold">
+                           {slider.title}
                         </h1>
-                        <p className="text-lg md:text-xl text-primary">
-                           Up to 50% off on top brands
+                        <p className="text-lg md:text-2xl">
+                           {slider.subtitle}
                         </p>
                         <Link href="/shop">
-                           <Button className="bg-accent text-accent-foreground px-6 py-3">
-                              Shop Now
+                           <Button>
+                              {slider.cta}
                            </Button>
                         </Link>
                      </div>
