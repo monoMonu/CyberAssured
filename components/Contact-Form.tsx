@@ -6,14 +6,22 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
+interface ContactFormFields {
+   firstName: string;
+   surname: string;
+   telephone: string;
+   email: string;
+   message: string;
+}
+
 export default function ContactForm() {
    const {
       register,
       handleSubmit,
       formState: { errors, isSubmitting, isSubmitSuccessful },
-   } = useForm();
+   } = useForm<ContactFormFields>();
 
-   const onSubmit = (data: any) => {
+   const onSubmit = (data: ContactFormFields) => {
       console.log("Submitted data:", data, isSubmitSuccessful);
       // You can send this to a backend API or display a success toast
    };
