@@ -39,12 +39,12 @@ function page() {
         imageUrl="/insight-1.jpg"
         title="Managed Security Services"
         subtitle="Protect your business universe with our flexible range of SOC services."
-        ctaText="Get started"
+        ctaText="See SOCs"
         className="bg-background text-foreground"
-        link="#"
+        link="#socs"
       />
       <section className="bg-background text-foreground py-20">
-        <div className="max-w-5xl mx-auto px-4 text-center space-y-10">
+        <div className="max-w-screen-xl mx-auto px-4 text-center space-y-10">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             &quot;Stellar protection <span className="text-primary">for every business&quot;</span>
           </h2>
@@ -73,8 +73,8 @@ function page() {
           </div>
         </div>
       </section>
-      <section className="bg-background text-foreground py-10">
-        <div className="container max-w-5xl mx-auto px-4 text-center space-y-10">
+      <section className="bg-background text-foreground py-10" id='socs'>
+        <div className="container max-w-screen-xl mx-auto px-4 text-center space-y-10">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             &quot;A SOC <span className="text-primary">for every challenge&quot;</span>
           </h2>
@@ -94,11 +94,11 @@ function page() {
             </p>
           </div>
         </div>
-
         <ManagedServicesCard />
 
+
         <section className="py-20 px-4 md:px-8 text-center bg-background text-foreground">
-          <div className="max-w-5xl mx-auto">
+          <div className="mx-auto max-w-screen-xl">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="w-2 h-2.5 bg-secondary" />
               <div className="w-2 h-5 bg-secondary" />

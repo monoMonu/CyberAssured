@@ -42,17 +42,16 @@ function ManagedServicesCard() {
    ]
 
    return (
-      <div className="flex flex-wrap justify-center gap-4 mt-8">
+      <div className="flex flex-wrap justify-center gap-5 mt-8">
          {managedServicesCard.map((item, idx) => (
-            <div className="flex justify-center items-center max-w-sm" key={idx}>
-               <FeaturedCard
-                  title={item.title}
-                  description={item.description}
-                  image={item.image}
-                  cta={item.cta}
-                  color='primary'
-               />
-            </div>
+            <FeaturedCard
+               key={idx}
+               title={item.title}
+               description={item.description}
+               image={item.image}
+               cta={item.cta}
+               color='primary'
+            />
          ))}
       </div>
    )

@@ -27,12 +27,12 @@ const ImageTextSplitSection: React.FC<ImageTextSplitSectionProps> = ({
    bgColor = 'bg-muted',
 }) => {
    return (
-      <section className={`${bgColor} py-16 px-4 md:px-8`}>
+      <section className={`${bgColor} py-16 px-4 lg:px-8`}>
          <div
-            className={`max-w-screen-xl mx-auto flex flex-col md:flex-row items-center md:px-8 gap-10 ${reverse ? 'md:flex-row-reverse' : ''
+            className={`max-w-screen-xl mx-auto flex flex-col md:flex-row items-center lg:gap-8 md:gap-4 gap-8 ${reverse ? 'md:flex-row-reverse' : ''
                }`}
          >
-            <div className="w-full md:w-1/2 md:px-8">
+            <div className="w-full md:w-1/2 sm:px-4">
                <div className="rounded-lg shadow-md overflow-hidden">
                   <Image
                      src={imageSrc}
@@ -44,7 +44,7 @@ const ImageTextSplitSection: React.FC<ImageTextSplitSectionProps> = ({
                </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-8 text-left">
+            <div className="w-full md:w-1/2 sm:px-4 text-left">
                <div className="flex items-center gap-2 mb-4">
                   <div className="w-2 h-2 bg-secondary" />
                   <div className="w-2 h-5 bg-secondary" />

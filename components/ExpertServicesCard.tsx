@@ -25,9 +25,9 @@ const expertServices = [
 
 function ExpertServicesCard() {
    return (
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2">
          {expertServices.map((item, idx) => (
-            <div className="flex justify-center items-center max-w-sm" key={idx}>
+            <div className="flex justify-center items-center max-w-screen-sm" key={idx}>
                <FeaturedCard
                   title={item.title}
                   description={item.description}

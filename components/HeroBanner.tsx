@@ -7,7 +7,7 @@ interface HeroBannerProps {
    imageUrl: string;
    title: string;
    subtitle: string;
-   ctaText: string;
+   ctaText?: string;
    className?: string;
    link?: string;
    color?: string;
@@ -31,11 +31,9 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
          }}
       >
          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-1"></div>
-         <div className="max-w-4xl mx-auto relative z-20 text-left">
-            <h1 className="text-4xl md:text-6xl max-w-2xl font-bold tracking-tight mb-3 leading-[1.1] text-background">
-               {title}
-            </h1>
-            <p className="text-lg md:text-xl text-background/90 mb-6">
+         <div className="max-w-5xl mx-auto relative z-20 text-left">
+            <h1 className="text-4xl md:text-7xl max-w-2xl font-bold tracking-tight mb-5 leading-[1.1] text-background" dangerouslySetInnerHTML={{ __html: title }} />
+            <p className="text-lg md:text-2xl text-background/90 mb-6">
                {subtitle}
             </p>
             {ctaText && link && (
