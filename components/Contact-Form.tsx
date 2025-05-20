@@ -14,7 +14,7 @@ export default function ContactForm() {
    } = useForm();
 
    const onSubmit = (data: any) => {
-      console.log("Submitted data:", data);
+      console.log("Submitted data:", data, isSubmitSuccessful);
       // You can send this to a backend API or display a success toast
    };
 
