@@ -14,7 +14,9 @@ export default function Navbar() {
       <div className="mx-auto bg-card sticky top-0 z-50 shadow">
          <nav className="max-w-screen-xl w-full flex items-center justify-between px-4 md:px-8 py-4 mx-auto relative">
             <div className="text-3xl font-bold text-foreground">
-               <span className="text-primary font-black">CyberAssured</span>
+               <Link href="/" className="flex items-center">
+                  <span className="text-primary font-black">CyberAssured</span>
+               </Link>
             </div>
 
             {/* Mobile Hamburger */}
@@ -33,7 +35,7 @@ export default function Navbar() {
                >
                   <span className="hover:text-primary cursor-pointer">Services</span>
                   {showServices && (
-                     <div className="absolute -left-44 top-8/12 mt-4 w-2xl shadow-xl bg-background py-8 px-6 flex gap-6 z-50 transition-all">
+                     <div className="absolute -left-44 top-8/12 mt-4 w-2xl shadow-xl bg-muted py-8 px-6 flex gap-6 z-50 transition-all">
                         {/* Managed Services */}
                         <div className="w-1/2">
                            <h3 className="text-lg font-bold mb-2 text-primary">Managed services</h3>

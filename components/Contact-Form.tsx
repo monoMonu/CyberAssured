@@ -95,7 +95,7 @@ export default function ContactForm() {
                {errors.message && <p className="text-sm text-destructive">Message is required.</p>}
             </div>
 
-            <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto text-lg">
+            <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto text-base">
                {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
          </form>

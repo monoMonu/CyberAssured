@@ -1,10 +1,10 @@
 import FeaturedCard from "@/components/FeatureCard";
-import Benefits from "@/sections/Benefits";
 import CustomerPledges from "@/sections/CustomerPledge";
 import ExpertServices from "@/sections/ExpertServices";
 import HeroCarousel from "@/sections/HeroSec";
 import ManagedServices from "@/sections/ManagedServices";
 import SecurityInsightsSection from "@/sections/SecurityInsights";
+import WhyChooseCyberassured from "@/sections/WhyChooseUs";
 
 export default function Home() {
 
@@ -50,7 +50,7 @@ export default function Home() {
       <SecurityInsightsSection />
       <ManagedServices />
       <ExpertServices />
-      <Benefits />
+      <WhyChooseCyberassured className="bg-muted" />
       <CustomerPledges />
     </section>
   );

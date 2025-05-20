@@ -1,4 +1,5 @@
 import { Linkedin, Twitter } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -8,12 +9,12 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-screen-xl mx-auto"> 
                <div className="flex flex-col items-center md:items-start text-center md:text-left px-8 lg:px-4">
                   <Link href="/" passHref>
-                     <img
+                     <Image
                         src="/logo.svg"
                         alt="CyberAssured"
                         height={75}
                         width={200} 
-                        className="mb-8" 
+                        className="mb-8 invert" 
                      />
                   </Link>
                   <a

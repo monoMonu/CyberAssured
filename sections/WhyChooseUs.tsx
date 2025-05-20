@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Cpu, ShieldCheck, TrendingUp, Users } from "lucide-react";
 import Link from "next/link";
 
@@ -36,9 +37,9 @@ const benefits = [
    },
 ];
 
-export default function WhyChooseCyberassured() {
+export default function WhyChooseCyberassured({ className }: { className?: string }) {
    return (
-      <section className="py-20 text-foreground bg-muted">
+      <section className={`py-10 text-foreground  ${cn(className)}`}>
          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-primary">Why Choose Cyberassured</h2>
             <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
