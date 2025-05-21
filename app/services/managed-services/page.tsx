@@ -74,7 +74,7 @@ function page() {
         </div>
       </section>
       <section className="bg-muted text-foreground py-10" id='socs'>
-        <div className="container max-w-screen-xl mx-auto px-4 text-center space-y-10">
+        <div className="container max-w-screen-xl mx-auto px-4 space-y-10">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             &quot;A SOC <span className="text-primary">for every challenge&quot;</span>
           </h2>
