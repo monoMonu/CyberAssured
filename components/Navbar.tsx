@@ -28,6 +28,7 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-8 text-base font-medium text-foreground relative">
+               <Link className="hover:text-primary py-3" href="/">Home</Link>
                <div
                   className="relative h-full py-3"
                   onMouseEnter={() => setShowServices(true)}
@@ -83,6 +84,7 @@ export default function Navbar() {
             )}
          >
             <div className="flex flex-col gap-4 px-6 py-4 text-base font-medium text-foreground">
+               <Link className="hover:text-primary" href="/">Home</Link>
                <details className="group">
                   <summary className="cursor-pointer hover:text-primary">Services</summary>
                   <div className="mt-2 ml-4 space-y-2">
@@ -98,6 +100,7 @@ export default function Navbar() {
                <Link className="hover:text-primary" href="/resources">Resources</Link>
                <Link className="hover:text-primary" href="/about">About</Link>
                <Link className="hover:text-primary" href="/contact">Contact</Link>
+               <Link className="hover:text-primary" href="/">Home</Link>
             </div>
          </div>
       </div>

@@ -93,8 +93,8 @@ function page() {
               technology and a team of experts.
             </p>
           </div>
+          <ManagedServicesCard />
         </div>
-        <ManagedServicesCard />
 
 
         <section className="py-20 px-4 md:px-8 text-center bg-background text-foreground">

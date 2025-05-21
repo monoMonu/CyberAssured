@@ -45,7 +45,7 @@ const SecurityInsightsSection = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="pb-4 bg-background text-foreground">
+    <section className="pb-8 bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-screen-xl">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center py-10 text-secondary">
           Security Insight

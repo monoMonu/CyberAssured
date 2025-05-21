@@ -4,7 +4,7 @@ import React from 'react'
 
 function ManagedServices() {
    return (
-      <section className="py-8">
+      <section className="py-8 max-w-screen-xl mx-auto">
          <div className="mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
                Managed Services

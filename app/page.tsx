@@ -47,11 +47,11 @@ export default function Home() {
         </div>
       </section>
 
-      <SecurityInsightsSection />
       <ManagedServices />
       <ExpertServices />
       <WhyChooseCyberassured className="bg-muted" />
       <CustomerPledges />
+      <SecurityInsightsSection />
     </section>
   );
 }
