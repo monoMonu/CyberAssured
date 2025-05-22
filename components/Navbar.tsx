@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { cn } from "@/lib/utils"; // Optional utility from shadcn/ui
+import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react"; // Install lucide-react if needed
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
    const [showServices, setShowServices] = useState(false);
@@ -19,14 +19,12 @@ export default function Navbar() {
                </Link>
             </div>
 
-            {/* Mobile Hamburger */}
             <div className="md:hidden">
                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-foreground">
                   {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                </button>
             </div>
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex gap-8 text-base font-medium text-foreground relative">
                <Link className="hover:text-primary py-3" href="/">Home</Link>
                <div
@@ -37,7 +35,6 @@ export default function Navbar() {
                   <span className="hover:text-primary cursor-pointer">Services</span>
                   {showServices && (
                      <div className="absolute -left-44 top-8/12 mt-4 w-2xl shadow-xl bg-muted py-8 px-6 flex gap-6 z-50 transition-all">
-                        {/* Managed Services */}
                         <div className="w-1/2">
                            <h3 className="text-lg font-bold mb-2 text-primary">Managed services</h3>
                            <p className="text-sm text-muted-foreground mb-5">
@@ -52,7 +49,6 @@ export default function Navbar() {
                            </div>
                         </div>
 
-                        {/* Expert Services */}
                         <div className="w-1/2">
                            <h3 className="text-lg font-bold mb-2 text-primary">Expert services</h3>
                            <p className="text-sm text-muted-foreground mb-5">
