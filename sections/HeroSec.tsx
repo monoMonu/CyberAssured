@@ -14,7 +14,7 @@ import Link from 'next/link';
 const sliders = [
    { 
       id: 1, 
-      src: '/lone-tree.jpg', 
+      src: '/Brand-Protection.png', 
       alt: 'Promotional slider for summer sale showing summer vibes' ,
       title: "Not all heroes wear capes",
       subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
@@ -22,7 +22,7 @@ const sliders = [
    },
    { 
       id: 2, 
-      src: '/insight-1.jpg', 
+      src: '/Identity-Mgmt.png', 
       alt: 'Promotional slider showcasing cool products on sale',
       title: "Not all heroes wear capes",
       subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
@@ -30,7 +30,7 @@ const sliders = [
    },
    { 
       id: 3, 
-      src: '/insight-1.jpg', 
+      src: '/OTIT-Security.png', 
       alt: 'Promotional slider with a beach theme for the sale',
       title: "Not all heroes wear capes",
       subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
@@ -38,7 +38,7 @@ const sliders = [
    },
    { 
       id: 4, 
-      src: '/insight-1.jpg', 
+      src: '/SOC-Image.png', 
       alt: 'Promotional slider highlighting hot deals available',
       title: "Not all heroes wear capes",
       subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
@@ -46,7 +46,7 @@ const sliders = [
    },
    { 
       id: 5, 
-      src: '/insight-1.jpg', 
+      src: '/Vuln-Mgmt.png', 
       alt: 'Promotional slider indicating limited stock for sale items',
       title: "Not all heroes wear capes",
       subtitle: "Imagine. Zero riska, zero vulnerabilities, and zero successful attacks",
@@ -58,7 +58,7 @@ const HomeHeroBGSlider = () => {
    const swiperRef = useRef<any>(null);
 
    return (
-      <section className="relative h-[80vh] w-full overflow-hidden text-primary-foreground">
+      <section className="relative h-[calc(100vh-80px)] w-full overflow-hidden text-primary-foreground">
          <Swiper
             ref={swiperRef}
             modules={[Navigation, Autoplay, Pagination]}
@@ -84,10 +84,10 @@ const HomeHeroBGSlider = () => {
                      aria-label={slider.alt}
                   >
                      {/* Overlay ONLY on the background */}
-                     <div className="absolute inset-0 bg-foreground opacity-50 z-0" />
+                     <div className="absolute inset-0 bg-foreground opacity-10 z-0" />
 
                      {/* Foreground Content */}
-                     <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 space-y-6">
+                     {/* <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 space-y-6">
                         <h1 className="text-4xl md:text-7xl font-bold">
                            {slider.title}
                         </h1>
@@ -99,7 +99,7 @@ const HomeHeroBGSlider = () => {
                               {slider.cta}
                            </Button>
                         </Link>
-                     </div>
+                     </div> */}
                   </div>
                </SwiperSlide>
             ))}
