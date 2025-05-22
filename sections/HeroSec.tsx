@@ -21,7 +21,7 @@ const HomeHeroBGSlider = () => {
    const swiperRef = useRef<any>(null);
 
    return (
-      <section className="relative max-h-screen w-full overflow-hidden text-primary-foreground">
+      <section className="relative max-h-screen w-full overflow-hidden text-primary-foreground bg-muted">
          <Swiper
             ref={swiperRef}
             modules={[Navigation, Autoplay, Pagination]}
@@ -30,18 +30,18 @@ const HomeHeroBGSlider = () => {
             pagination={{
                clickable: true,
                renderBullet: (index, className) => {
-                  return `<span class="${className} bg-accent-foreground rounded-full w-2.5 h-2.5 inline-block"></span>`;
+                  return `<span class="${className} rounded-full w-2.5 h-2.5 inline-block"></span>`;
                }
             }}
             loop={true}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             speed={800}
-            className="max-h-screen w-full"
+            className="h-[calc(100vh-160px)] mt-10 w-full relative"
          >
             {sliders.map((slider) => (
                <SwiperSlide key={slider.id}>
                   <div
-                     className="relative w-full max-h-screen  bg-black bg-center"
+                     className="relative h-full mx-auto"
                      role="img"
                      aria-label={slider.alt}
                   >
@@ -51,7 +51,7 @@ const HomeHeroBGSlider = () => {
                            autoPlay
                            loop
                            muted
-                           className="relative top-0 left-0 max-h-screen object-cover mx-auto"
+                           className="relative h-full mx-auto"
                         />
                      ) : (
                         <div
