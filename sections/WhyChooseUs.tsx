@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const benefits = [
    {
-      title: 'World-Class Expertise',
+      title: 'Predict and Prevent Cyber Threats',
       description:
-         'Certified professionals (CISSP, CISM, CEH, OSCP) with experience across all industries, staying ahead of cybersecurity trends.',
+         'We go beyond reactive security by combining Cyber Intelligence, Brand Monitoring, Attack Surface Monitoring, Infrastructure Monitoring, and Supply Chain Intelligence. This unified approach provides complete context around your digital risks, enabling proactive threat mitigation before attacks can impact your operations.',
       icon: (
          <ShieldCheck size={36} className="text-secondary" />
       ),
@@ -14,23 +14,22 @@ const benefits = [
    {
       title: 'Cutting-Edge Technology',
       description:
-         'Advanced tools for threat detection, vulnerability management, and identity protection—tailored to your environment.',
+         'Our zero-trust identity security solutions protect privileged access across your entire enterprise infrastructure. With proven deployment experience across 1500+ organizations worldwide, we ensure that only authorized users can access critical systems, when they need it, and for exactly as long as necessary.',
       icon: (
          <Cpu size={36} className="text-secondary" />
       ),
    },
    {
-      title: 'Customer-Centric Approach',
+      title: 'Prioritize Risk-Based Vulnerability Management',
       description:
-         'We align security with your business goals—flexible programs that grow with you without slowing you down.',
+         'Not all vulnerabilities are created equal. Our advanced platform quantifies cyber risk in real financial terms, helping you focus remediation efforts where they matter most. By understanding the true business impact of security gaps, you can allocate resources efficiently and reduce overall risk exposure.',
       icon: (
          <Users size={36} className="text-secondary" />
       ),
    },
    {
-      title: 'Proven Results',
-      description:
-         'Clients see 85% fewer incidents and 40% faster response times with our proactive managed services.',
+      title: 'Unify OT & IT Security',
+      description: 'We specialize in protecting both traditional IT infrastructure and operational technology environments under a single security framework. Our end-to-end approach safeguards critical operations with zero-trust controls, real-time monitoring, and advanced threat response capabilities that understand the unique requirements of industrial and connected environments.',
       icon: (
          <TrendingUp size={36} className="text-secondary" />
       ),
@@ -54,7 +53,7 @@ export default function WhyChooseCyberassured({ className }: { className?: strin
                   >
                      <div className="mb-4 text-center grid place-items-center py-3">{item.icon}</div>
                      <h3 className="text-xl font-semibold mb-2 text-foreground">{item.title}</h3>
-                     <p className="text-muted-foreground text-base">{item.description}</p>
+                     <p className="text-muted-foreground text-base text-wrap wrap-break-word">{item.description}</p>
                   </div>
                ))}
             </div>

@@ -10,11 +10,11 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
 const sliders = [
-   { id: 1, src: '/Brand-Protection.mp4', alt: 'Promotional slider for brand protection' },
-   { id: 2, src: '/ID-Access.mp4', alt: 'Promotional slider for identity management' },
-   { id: 3, src: '/OTIT-Security.mp4', alt: 'Promotional slider for OT/IT security' },
-   { id: 4, src: '/SOC-Service.mp4', alt: 'Promotional slider for SOC' },
-   { id: 5, src: '/Vuln-Mgmt.mp4', alt: 'Promotional slider for vulnerability management' },
+   { id: 1, src: '/SOC.mp4', alt: 'Promotional slider for SOC' },
+   { id: 2, src: '/Brand-Protection.mp4', alt: 'Promotional slider for brand protection' },
+   { id: 3, src: '/ZeroTrust1.mp4', alt: 'Promotional slider for identity management' },
+   { id: 4, src: '/Vlun1.mp4', alt: 'Promotional slider for vulnerability management' },
+   { id: 5, src: '/OTITSec.mp4', alt: 'Promotional slider for OT/IT security' },
 ];
 
 const HomeHeroBGSlider = () => {
