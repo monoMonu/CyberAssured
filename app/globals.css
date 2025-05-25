@@ -48,7 +48,7 @@
   --size: 16px;
 
   --radius: 0.625rem;
-  --background: #f3f3f3;
+  --background: #fdf6fd;
   --foreground: #22222b;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -58,7 +58,7 @@
   --primary-foreground: oklch(0.985 0 0);
   --secondary: #0078be;
   --secondary-foreground:#ffffff;
-  --muted: #fdf6fd;
+  --muted: #f3f3f3;
   --muted-foreground: oklch(0.556 0 0);
   --accent: var(--primary);
   --accent-foreground: var(--primary-foreground);
@@ -145,4 +145,11 @@
 html {
   @apply scroll-smooth;
   font-size: var(--size);
+}
+
+.primary-btn {
+  @apply bg-primary text-primary-foreground text-base hover:bg-primary-foreground hover:text-primary border-2 border-primary;
+}
+.secondary-btn {
+  @apply bg-background text-primary text-base hover:bg-primary hover:text-primary-foreground border-2 border-primary;
 }
