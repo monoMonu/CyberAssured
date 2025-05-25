@@ -48,7 +48,7 @@
   --size: 16px;
 
   --radius: 0.625rem;
-  --background: #fdf6fd;
+  --background: #ffffff;
   --foreground: #22222b;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);

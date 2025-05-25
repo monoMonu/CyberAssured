@@ -1,5 +1,10 @@
 import HeroBanner from '@/components/HeroBanner'
 import ManagedServicesCard from '@/components/ManagedServicesCard'
+import CVGBenefits from '@/sections/CVGBenefits';
+import { CVGTiers } from '@/sections/CVGTiers';
+import { CyberVGFeatures } from '@/sections/CyberVGFeatures';
+import TechnologyBehindCVG from '@/sections/TechnologyBehindCVG';
+import Image from 'next/image';
 import React from 'react'
 
 
@@ -37,13 +42,25 @@ function page() {
     <div>
       <HeroBanner
         imageUrl="/insight-1.jpg"
-        title="Managed Security Services"
-        subtitle="Protect your business universe with our flexible range of SOC services."
-        ctaText="See SOCs"
+        title="Cyber VanGuard Empowers Your IT Team"
+        subtitle="CyberVanguard leverages Machine Learning and AI to analyze, correlate, detect, and respond to known and unknown threats without the additional time and expense of hiring and training a in-house security team."
+        ctaText="Explore Service Tiers"
+        link="#services"
+        ctaText2="Request Demo"
+        link2="#"
         className="bg-background text-foreground"
-        link="#socs"
       />
-      <section className="bg-background text-foreground py-20">
+      <section className="bg-background text-foreground pt-10 max-w-screen-xl mx-auto px-4 text-center">
+        <Image 
+          src={"/CyberVanGuard.png"}
+          width={1200}
+          height={600}
+          alt="Cyber VanGuard Logo"
+          className='w-screen h-auto mx-auto'
+        />
+      </section>
+
+      {/* <section className="bg-background text-foreground py-20">
         <div className="max-w-screen-xl mx-auto px-4 text-center space-y-10">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             &quot;Stellar protection <span className="text-primary">for every business&quot;</span>
@@ -96,7 +113,6 @@ function page() {
           <ManagedServicesCard />
         </div>
 
-
         <section className="py-20 px-4 md:px-8 text-center bg-background text-foreground">
           <div className="mx-auto max-w-screen-xl">
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -124,7 +140,15 @@ function page() {
           </div>
         </section>
 
-      </section>
+      </section> */}
+            
+      <CyberVGFeatures />
+
+      <CVGTiers />
+
+      <TechnologyBehindCVG />
+
+      <CVGBenefits />
 
     </div>
   )
