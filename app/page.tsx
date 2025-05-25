@@ -42,7 +42,7 @@ export default function Home() {
       <CustomerPledges />
       <SecurityInsightsSection />
 
-      <section className="pt-24 pb-20 bg-muted">
+      <section className="pt-24 pb-20">
         <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
             Ready to Strength Your Security ? 

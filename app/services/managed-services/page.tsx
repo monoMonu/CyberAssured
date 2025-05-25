@@ -1,9 +1,11 @@
 import HeroBanner from '@/components/HeroBanner'
+import { Button } from '@/components/ui/button';
 import CVGBenefits from '@/sections/CVGBenefits';
 import { CVGTiers } from '@/sections/CVGTiers';
 import { CyberVGFeatures } from '@/sections/CyberVGFeatures';
 import TechnologyBehindCVG from '@/sections/TechnologyBehindCVG';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 function page() {
@@ -11,7 +13,7 @@ function page() {
   return (
     <div>
       <HeroBanner
-        imageUrl="/insight-1.jpg"
+        imageUrl="/Image3.png"
         title="Cyber VanGuard Empowers Your IT Team"
         subtitle="CyberVanguard leverages Machine Learning and AI to analyze, correlate, detect, and respond to known and unknown threats without the additional time and expense of hiring and training a in-house security team."
         ctaText="Explore Service Tiers"
@@ -21,7 +23,7 @@ function page() {
         className="bg-background text-foreground"
       />
       <section className="bg-background text-foreground pt-10 max-w-screen-xl mx-auto px-4 text-center">
-        <Image 
+        <Image
           src={"/CyberVanGuard.png"}
           width={1200}
           height={600}
@@ -111,7 +113,7 @@ function page() {
         </section>
 
       </section> */}
-            
+
       <CyberVGFeatures />
 
       <CVGTiers />
@@ -119,6 +121,24 @@ function page() {
       <TechnologyBehindCVG />
 
       <CVGBenefits />
+
+      <section className="pt-24 pb-20">
+        <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
+          <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
+            Future-Proof Your Cybersecurity Posture
+          </h2>
+          <p className="text-center md:text-xl text-lg text-foreground/80 my-6">
+            Siloed log data, costly infrastructure upgrades, and a lack of specialized staff keep many organizations from achieving full threat visibility. CyberAssured&apos;s security information and event management services empower IT teams to build a comprehensive cybersecurity posture that defends against current and future threats.
+          </p>
+          <div className="flex mt-10 justify-center gap-6 flex-wrap">
+            <Link href={"/"}>
+              <Button className="secondary-btn">
+                Start Your Security Transformation
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
     </div>
   )

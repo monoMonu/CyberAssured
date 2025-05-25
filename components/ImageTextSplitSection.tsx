@@ -4,30 +4,37 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
+import { CheckCircle } from 'lucide-react';
 
 interface ImageTextSplitSectionProps {
+   id: string;
    title: string;
-   description: string;
+   description1: string;
+   description2: string;
    linkText: string;
    linkHref: string;
    imageSrc: string;
+   bullets?: string[];
    imageAlt?: string;
    reverse?: boolean; 
    bgColor?: string;
 }
 
 const ImageTextSplitSection: React.FC<ImageTextSplitSectionProps> = ({
+   id,
    title,
-   description,
+   description1,
+   description2,
    linkText,
    linkHref,
    imageSrc,
+   bullets = [],
    imageAlt = '',
    reverse = false,
    bgColor = 'bg-muted',
 }) => {
    return (
-      <section className={`${bgColor} py-16 px-4 lg:px-8`}>
+      <section className={`${bgColor} py-16 px-4 lg:px-8`} id={id}>
          <div
             className={`max-w-screen-xl mx-auto flex flex-col md:flex-row items-center lg:gap-8 md:gap-4 gap-8 ${reverse ? 'md:flex-row-reverse' : ''
                }`}
@@ -52,11 +59,23 @@ const ImageTextSplitSection: React.FC<ImageTextSplitSectionProps> = ({
                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                   {title}
                </h2>
-               <p className="text-muted-foreground text-base mb-6">
-                  {description}
+               <p className="text-foreground/80 text-base mb-5">
+                  {description1}
                </p>
+               <p className="text-foreground/80 text-base mb-5">
+                  {description2}
+               </p>
+               {bullets.map((item, i) => (
+                  <p key={i} className="flex items-start gap-2 text-foreground/80">
+                     <span className='min-w-7 min-h-7'>
+                        <CheckCircle size={20} className="text-green-500 mt-1" />
+                     </span>
+                     {item}
+                  </p>
+               ))}
                <Link
                   href={linkHref}
+                  className='mt-6 inline-block'
                >
                   <Button variant={'secondary'} className='text-background'>
                      {linkText}

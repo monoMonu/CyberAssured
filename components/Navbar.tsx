@@ -67,8 +67,8 @@ export default function Navbar() {
                </div>
                <Link className="hover:text-primary py-3" href="/help-me-choose">Help me choose</Link>
                <Link className="hover:text-primary py-3" href="/resources">Resources</Link>
-               {/* <Link className="hover:text-primary py-3" href="/about">About</Link>
-               <Link className="hover:text-primary py-3" href="/contact">Contact</Link> */}
+               <Link className="hover:text-primary py-3" href="/about">About</Link>
+               {/* <Link className="hover:text-primary py-3" href="/contact">Contact</Link> */}
             </div>
          </nav>
 
@@ -94,8 +94,8 @@ export default function Navbar() {
                </details>
                <Link className="hover:text-primary" href="/help-me-choose">Help me choose</Link>
                <Link className="hover:text-primary" href="/resources">Resources</Link>
-               {/* <Link className="hover:text-primary" href="/about">About</Link>
-               <Link className="hover:text-primary" href="/contact">Contact</Link> */}
+               <Link className="hover:text-primary" href="/about">About</Link>
+               {/* <Link className="hover:text-primary" href="/contact">Contact</Link> */}
             </div>
          </div>
       </div>

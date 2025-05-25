@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Footer = () => {
    return (
-      <footer className="text-foreground pt-10 md:pt-12">
+      <footer className="text-foreground pt-10 md:pt-12 border-t bg-muted">
          <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-screen-xl mx-auto"> 
                <div className="flex flex-col items-center md:items-start text-center md:text-left px-8 lg:px-4">
@@ -47,29 +47,30 @@ const Footer = () => {
                   <nav>
                      <h3 className="text-base font-semibold text-primary mb-5 border-b-2 border-primary pb-0.5 inline-block">Our Services</h3>
                      <ul className="space-y-1.5 mt-0"> 
-                        <li><Link href="/managed-services" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Managed Services</Link></li>
-                        <li><Link href="/expert-services" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Expert Services</Link></li>
-                        <li><Link href="/consulting" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Consulting</Link></li>
-                        <li><Link href="/cybersecurity-audit" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Cybersecurity Audit</Link></li>
+                        <li><Link href="/services/managed-services" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Managed Services</Link></li>
+                        <li><Link href="/services/expert-services" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Expert Services</Link></li>
+                        <li><Link href="/services/expert-services/#brand-protection" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Brand Protection</Link></li>
+                        <li><Link href="/services/expert-services/#zero-trust" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Zero Trust Security</Link></li>
+                        <li><Link href="/services/expert-services/#compliance-risk" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Compliance & Risk</Link></li>
+                        <li><Link href="/services/expert-services/#otit" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">OT/IT Security </Link></li>
                      </ul>
                   </nav>
 
                   <nav>
                      <h3 className="text-base font-semibold text-primary mb-5 border-b-2 border-primary pb-0.5 inline-block">Resources</h3>
                      <ul className="space-y-1.5 mt-0">
-                        <li><Link href="/insights" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Insights</Link></li>
-                        <li><Link href="/blog" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Blog</Link></li>
+                        <li><Link href="/resources" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Blog</Link></li>
                         <li><Link href="/help-me-choose" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Help Me Choose</Link></li>
-                        <li><Link href="/case-studies" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Case Studies</Link></li>
+                        <li><Link href="/resources" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Case Studies</Link></li>
                      </ul>
                   </nav>
 
                   <nav>
                      <h3 className="text-base font-semibold text-primary mb-5 border-b-2 border-primary pb-0.5 inline-block">About Us</h3>
                      <ul className="space-y-1.5 mt-0">
-                        <li><Link href="/about" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">About CyberAssured</Link></li>
-                        <li><Link href="/our-team" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Our Team</Link></li>
-                        <li><Link href="/partners" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Partners</Link></li>
+                        <li><Link href="/about/#story" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Our Story</Link></li>
+                        <li><Link href="/about/#mission" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Mission & Vision</Link></li>
+                        <li><Link href="/about/#core-values" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Core Values</Link></li>
                         <li><Link href="/contact" className="text-foreground hover:text-secondary text-sm hover:underline underline-offset-3">Contact</Link></li>
                      </ul>
                   </nav>
@@ -86,7 +87,7 @@ const Footer = () => {
                </div>
             </div>
 
-            <div className="mt-16 pt-5 border-t border-accent bg-secondary px-10">
+            <div className="mt-12 pt-5 border-t border-accent bg-secondary px-10">
                <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground space-y-4 max-w-screen-xl mx-auto">
                   <div>
                      <Link href="/privacy-policy" className="text-background hover:text-foreground transition-colors duration-200">Privacy Policy</Link>

@@ -33,7 +33,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
             backgroundPosition: 'center',
          }}
       >
-         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-1"></div>
+         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-1"></div>
          <div className="max-w-5xl mx-auto relative z-20 text-left">
             <h1 className="text-4xl md:text-7xl max-w-3xl font-bold tracking-tight mb-5 leading-[1.1] text-background" dangerouslySetInnerHTML={{ __html: title }} />
             <p className="text-lg md:text-xl text-background/90 mb-6">

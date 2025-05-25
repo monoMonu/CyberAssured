@@ -6,7 +6,7 @@ function page() {
    return (
       <div>
          <HeroBanner
-            imageUrl="/expert-services-banner.jpg"
+            imageUrl="/Image5.png"
             title="Ready to strengthen your security posture?"
             subtitle="Contact our experts today for a comprehensive security assessment and discover how we can help protect what matters most to your organization."
          />

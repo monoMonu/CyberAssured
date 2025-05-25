@@ -98,7 +98,7 @@ function ManagedServicesCard() {
                </div>
 
                {/* Title */}
-               <h3 className="text-2xl font-extrabold text-[var(--primary)] mb-2">
+               <h3 className="text-2xl font-bold text-[var(--primary)] mb-2">
                   🛡️ {pkg.title}
                </h3>
 
