@@ -9,7 +9,6 @@ function page() {
             imageUrl="/expert-services-banner.jpg"
             title="Ready to strengthen your security posture?"
             subtitle="Contact our experts today for a comprehensive security assessment and discover how we can help protect what matters most to your organization."
-            color='secondary'
          />
          <ContactForm />
       </div>

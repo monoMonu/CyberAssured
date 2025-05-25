@@ -11,10 +11,9 @@ function page() {
             imageUrl="/expert-services-banner.jpg"
             title="Expert Services"
             subtitle="Expert examination of your IT defences."
-            ctaText="see assessments"
+            ctaText2="see assessments"
             className="bg-background text-foreground"
-            link="#assessments"
-            color='secondary'
+            link2="#assessments"
          />
          <section className="bg-background text-foreground py-20">
             <div className="max-w-screen-xl mx-auto px-4 text-center space-y-10">

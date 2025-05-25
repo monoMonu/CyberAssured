@@ -9,7 +9,6 @@ function page() {
             imageUrl="/expert-services-banner.jpg"
             title="For best-fit <br />protection, start here"
             subtitle="Which SOC solution is best suited to your business? Our simple tool will help you find out."
-            color='secondary'
          />
          <section className="bg-background text-foreground py-20 max-w-screen-xl mx-auto">
             <div className="mx-auto px-4 text-center space-y-5">

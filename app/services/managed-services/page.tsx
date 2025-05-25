@@ -1,40 +1,10 @@
 import HeroBanner from '@/components/HeroBanner'
-import ManagedServicesCard from '@/components/ManagedServicesCard'
 import CVGBenefits from '@/sections/CVGBenefits';
 import { CVGTiers } from '@/sections/CVGTiers';
 import { CyberVGFeatures } from '@/sections/CyberVGFeatures';
 import TechnologyBehindCVG from '@/sections/TechnologyBehindCVG';
 import Image from 'next/image';
 import React from 'react'
-
-
-const roles = [
-  {
-    title: 'Security Engineer',
-    description: 'Ensures your systems seamlessly integrate with ours so everything works as it should.',
-  },
-  {
-    title: 'Service Delivery Manager',
-    description: 'Oversees every element of your service from internal response process to coordination of different teams.',
-  },
-  {
-    title: 'Threat Intelligence Specialist',
-    description: 'Looks beyond your perimeter to seek and stop cyber threats before they cause harm.',
-  },
-  {
-    title: 'Security Analyst',
-    description: 'Your eyes and ears. Monitors, analyses and investigates your IT estate 24×7 – on deck, not on call.',
-  },
-  {
-    title: 'Security Assurance Consultant',
-    description: 'Answers the difficult questions and provides valuable guidance that supports your decisions.',
-  },
-  {
-    title: 'Threat Hunter',
-    description: 'Harnesses endpoint data response technologies to hunt down and quarantine suspicious internal threats.',
-  },
-];
-
 
 function page() {
 

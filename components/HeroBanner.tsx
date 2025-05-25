@@ -11,7 +11,6 @@ interface HeroBannerProps {
    ctaText?: string;
    className?: string;
    link?: string;
-   color?: string;
    link2?: string;
    ctaText2?: string;
 }
@@ -24,7 +23,6 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
    link,
    link2,
    ctaText2,
-   color='primary',
 }) => {
    return (
       <section

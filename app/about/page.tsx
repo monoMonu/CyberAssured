@@ -14,7 +14,6 @@ function page() {
             subtitle="We take care of your security"
             ctaText="Talk to us"
             link="#socs"
-            color='secondary'
          />
          <section className="bg-background text-foreground py-20 max-w-screen-xl mx-auto">
             <div className="mx-auto px-4 text-center space-y-5">

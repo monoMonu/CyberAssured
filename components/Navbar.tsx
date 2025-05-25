@@ -34,7 +34,7 @@ export default function Navbar() {
                >
                   <span className="hover:text-primary cursor-pointer">Services</span>
                   {showServices && (
-                     <div className="absolute -left-44 top-8/12 mt-4 w-2xl shadow-xl bg-muted py-8 px-6 flex gap-6 z-50 transition-all">
+                     <div className="absolute -left-44 top-8/12 mt-4 w-2xl shadow-xl bg-background py-8 px-6 flex gap-6 z-50 transition-all">
                         <div className="w-1/2">
                            <h3 className="text-lg font-bold mb-2 text-primary">Managed services</h3>
                            <p className="text-sm text-muted-foreground mb-5">
