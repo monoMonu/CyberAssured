@@ -64,7 +64,7 @@ function page() {
             ]}
             linkText="Protect Your Brand"
             linkHref="#"
-            imageSrc="/insight-1.jpg"
+            imageSrc="/Brand-Protection&Digital-Risk-Monitoring.png"
             imageAlt="Expert Services"
             reverse={true}
          />
@@ -86,7 +86,7 @@ function page() {
             ]}
             linkText="Implement Zero Trust"
             linkHref="#"
-            imageSrc="/insight-1.jpg"
+            imageSrc="/Zero-Trust-Identity-Sec.png"
             imageAlt="Expert Services"
             reverse={false}
          />
@@ -107,7 +107,7 @@ function page() {
                "Audit preparation and regulatory response support",
                "Continuous compliance monitoring and reporting"
             ]}
-            imageSrc="/insight-1.jpg"
+            imageSrc="/Compliance&Risk-Assessment.jpg"
             imageAlt="Access Your Compliance"
             reverse={true}
             bgColor='bg-background'
@@ -129,7 +129,7 @@ function page() {
                "Incident response for operational disruptions",
                "Regulatory compliance for critical infrastructure",
             ]}
-            imageSrc="/insight-1.jpg"
+            imageSrc="/OT-IT-sec.png"
             imageAlt="Expert Services"
             bgColor='bg-background'
          />

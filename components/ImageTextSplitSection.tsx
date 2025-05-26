@@ -45,8 +45,8 @@ const ImageTextSplitSection: React.FC<ImageTextSplitSectionProps> = ({
                      src={imageSrc}
                      alt={imageAlt}
                      width={800}
-                     height={600}
-                     className="w-auto h-80 object-cover"
+                     height={1200}
+                     className="w-full h-auto object-cover"
                   />
                </div>
             </div>
