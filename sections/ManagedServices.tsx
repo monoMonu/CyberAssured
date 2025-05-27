@@ -7,8 +7,11 @@ function ManagedServices() {
       <section className="py-8 max-w-screen-xl mx-auto">
          <div className="mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
-               Managed Services
+               Comprehensive Security Capabilities
             </h2>
+            <p className="text-l md:text-l text-center m-4 ">
+               Three core pillars of cybersecurity excellence that protect, detect, and respond to modern threats
+            </p>
             <ManagedServicesCard />
          </div>
          <div className="mt-8 text-center">

@@ -6,6 +6,7 @@ import ManagedServices from "@/sections/ManagedServices";
 import SecurityInsightsSection from "@/sections/SecurityInsights";
 import Solutions from "@/sections/Solutions";
 import WhyChooseCyberassured from "@/sections/WhyChooseUs";
+import WhyCyberAssured from "@/sections/WhyCyberAssured";
 import Link from "next/link";
 
 export default function Home() {
@@ -37,9 +38,10 @@ export default function Home() {
 
       <Solutions />
       <ManagedServices />
-      <ExpertServices />
+      <WhyCyberAssured/>
+      {/* <ExpertServices /> */}
       <WhyChooseCyberassured />
-      <CustomerPledges />
+      {/* <CustomerPledges /> */}
       <SecurityInsightsSection />
 
       <section className="pt-24 pb-20">
