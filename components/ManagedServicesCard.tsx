@@ -3,7 +3,6 @@ import {
   FolderLock,
   ShieldCheck,
   AlarmClock,
-  CheckCircle2,
   LandPlot,
   Milestone
 } from 'lucide-react' // Lucide icon components

@@ -158,14 +158,14 @@ export default function PhishingPage() {
           <h2>Essential Questions to Ask Potential SOC Providers</h2>
           <p>When interviewing potential providers, include these critical questions:</p>
           <ul className="list-decimal pl-6 space-y-2">
-            <li>"How do you stay current with evolving threats specific to our industry?"</li>
-            <li>"What is your average time to detect and respond to different types of security incidents?"</li>
-            <li>"Can you walk us through your incident response process from detection to resolution?"</li>
-            <li>"How will your SOC integrate with our existing security tools and technologies?"</li>
-            <li>"What metrics do you use to measure the effectiveness of your security operations?"</li>
-            <li>"How do you handle staff training and retention to ensure consistent service quality?"</li>
-            <li>"What remediation services are included, and what would trigger additional costs?"</li>
-            <li>"How customizable are your reporting dashboards and alerts?"</li>
+            <li>&quot;How do you stay current with evolving threats specific to our industry?&quot;</li>
+            <li>&quot;What is your average time to detect and respond to different types of security incidents?&quot;</li>
+            <li>&quot;Can you walk us through your incident response process from detection to resolution?&quot;</li>
+            <li>&quot;How will your SOC integrate with our existing security tools and technologies?&quot;</li>
+            <li>&quot;What metrics do you use to measure the effectiveness of your security operations?&quot;</li>
+            <li>&quot;How do you handle staff training and retention to ensure consistent service quality?&quot;</li>
+            <li>&quot;What remediation services are included, and what would trigger additional costs?&quot;</li>
+            <li>&quot;How customizable are your reporting dashboards and alerts?&quot;</li>
           </ul>
 
             <h2>Making Your Final Decision</h2>
