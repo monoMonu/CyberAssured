@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 export default function PhishingPage() {
   return (
     <main className="bg-white text-gray-900 px-4 sm:px-8 md:px-16 py-24">
       <div className="max-w-4xl mx-auto">
 
         {/* Cover Image */}
-        <img
+        <Image
           src="/insight-1.jpg"
           alt="Cybersecurity Frameworks"
           className="w-full h-[22rem] object-cover rounded-xl shadow mb-12"
@@ -43,7 +45,7 @@ export default function PhishingPage() {
           `}</style>
 
           <p>
-            In today's rapidly evolving threat landscape, organizations face increasingly
+            In today&apos;s rapidly evolving threat landscape, organizations face increasingly
             sophisticated cyber attacks that can compromise sensitive data, disrupt operations, and
             damage reputation. With over 2,200 cyber attacks occurring daily, the question is no
             longer if your organization will be targeted, but when.
@@ -56,7 +58,7 @@ export default function PhishingPage() {
 
           <h2>Understanding the Value of a Managed SOC</h2>
           <p>
-            A Managed Security Operations Center (SOC) serves as your organization's vigilant
+            A Managed Security Operations Center (SOC) serves as your organization&apos;s vigilant
             guardian, operating 24/7/365 to monitor, detect, analyze, and respond to security
             incidents. Unlike traditional security measures that often react to threats after damage
             has occurred, a well-implemented SOC provides proactive protection through
@@ -77,7 +79,7 @@ export default function PhishingPage() {
           <h2>Essential Criteria for Selecting Your SOC Partner</h2>
 
           <h3>1. Define Your Security Objectives First</h3>
-          <p> Before evaluating providers, take time to clearly articulate your organization's security needs and objectives:</p>
+          <p> Before evaluating providers, take time to clearly articulate your organization&apos;s security needs and objectives:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>What industry-specific regulations must you comply with?</li>
             <li>Which assets and data are most critical to protect?</li>
@@ -105,10 +107,10 @@ export default function PhishingPage() {
            <h3>3. Assess Expertise and Experience</h3>
           <p> The human element remains crucial despite technological advances:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Industry-Specific Experience: Prioritize providers with experience protecting organizations in your specific industry, as they'll understand your unique threat landscape.</li>
+            <li>Industry-Specific Experience: Prioritize providers with experience protecting organizations in your specific industry, as they&apos;ll understand your unique threat landscape.</li>
             <li>Staff Qualifications: Inquire about the certifications (CISSP, CISM, CEH) and ongoing training of their security analysts.</li>
             <li>Team Structure and Coverage: Understand their staffing model, including analyst to-client ratios and how they ensure 24/7 coverage.</li>
-            <li>Proven Track Record: Request case studies or examples of how they've handled incidents similar to those your organization might face.</li>
+            <li>Proven Track Record: Request case studies or examples of how they&apos;ve handled incidents similar to those your organization might face.</li>
             
           </ul>
 
@@ -127,10 +129,10 @@ export default function PhishingPage() {
            <h3> 5. Evaluate Communication and Reporting</h3>
           <p>Effective security partnerships require transparent communication:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Regular Reporting: Verify the frequency, format, and depth of security reports you'll receive.</li>
-            <li>Real-Time Alerts: Understand how and when you'll be notified of security incidents.</li>
+            <li>Regular Reporting: Verify the frequency, format, and depth of security reports you&apos;ll receive.</li>
+            <li>Real-Time Alerts: Understand how and when you&apos;ll be notified of security incidents.</li>
             <li>Security Recommendations: The best providers offer actionable recommendations to improve your security posture over time.</li>
-            <li>Dedicated Points of Contact: Ensure you'll have access to security experts who understand your environment when questions arise.</li>
+            <li>Dedicated Points of Contact: Ensure you&apos;ll have access to security experts who understand your environment when questions arise.</li>
             
           </ul>
 
@@ -148,7 +150,7 @@ export default function PhishingPage() {
           <p>  Financial considerations must balance value with budget constraints:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>Transparent Pricing: The pricing structure should be clear, with no hidden costs.</li>
-            <li>Contract Flexibility: Look for reasonable contract terms that don't lock you into excessively long commitments.</li>
+            <li>Contract Flexibility: Look for reasonable contract terms that don&apos;t lock you into excessively long commitments.</li>
             <li>Value Assessment: Consider the total value proposition beyond just the price tag.</li>
           </ul>
 
@@ -176,7 +178,7 @@ export default function PhishingPage() {
             <li>Show cultural compatibility with your organization</li>
           </ul>
             <p> Remember that selecting a SOC provider is not merely a procurement decision but a
-                strategic partnership that will significantly impact your organization's security posture
+                strategic partnership that will significantly impact your organization&apos;s security posture
                 for years to come.
             </p>
           <h2>Conclusion</h2>

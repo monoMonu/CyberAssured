@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 export default function PhishingPage() {
   return (
     <main className="bg-white text-gray-900 px-4 sm:px-8 md:px-16 py-24">
       <div className="max-w-4xl mx-auto">
 
         {/* Cover Image */}
-        <img
+        <Image
           src="/insight-1.jpg"
           alt="Cybersecurity Frameworks"
           className="w-full h-[22rem] object-cover rounded-xl shadow mb-12"
@@ -37,7 +39,7 @@ export default function PhishingPage() {
           `}</style>
 
           <p>
-            In today’s digital-first world, cybersecurity is no longer optional—it’s a necessity. With cyber threats evolving at an unprecedented pace, businesses across industries must adopt robust cybersecurity frameworks to protect their data, systems, and reputation. But with so many frameworks available, how do you choose the right one for your organization? In this article, we’ll explore the most widely used cybersecurity frameworks, their applications, and why some are more popular than others.
+            In today&apos;s digital-first world, cybersecurity is no longer optional—it&apos;s a necessity. With cyber threats evolving at an unprecedented pace, businesses across industries must adopt robust cybersecurity frameworks to protect their data, systems, and reputation. But with so many frameworks available, how do you choose the right one for your organization? In this article, we&apos;ll explore the most widely used cybersecurity frameworks, their applications, and why some are more popular than others.
           </p>
 
           <h2>What Are Cybersecurity Frameworks?</h2>
@@ -56,7 +58,7 @@ export default function PhishingPage() {
           </ul>
 
           <h2>Which Framework is the Most Used and Why?</h2>
-          <p>The NIST Cybersecurity Framework (CSF) is arguably the most widely used framework globally. Here’s why:</p>
+          <p>The NIST Cybersecurity Framework (CSF) is arguably the most widely used framework globally. Here&apos;s why:</p>
           <ul>
             <li><strong>Flexibility:</strong> It can be tailored to fit organizations of all sizes and industries.</li>
             <li><strong>Comprehensiveness:</strong> It covers all aspects of cybersecurity, from risk assessment to incident response.</li>
@@ -78,7 +80,7 @@ export default function PhishingPage() {
           </p>
           <p>
             <em>
-              At <strong>Cyberassured</strong>, we’re committed to helping businesses navigate the complex world of cybersecurity solutions. Whether you’re looking to implement a framework or do a gap assessment, we’re here to guide you every step of the way.
+              At <strong>Cyberassured</strong>, we&apos;re committed to helping businesses navigate the complex world of cybersecurity solutions. Whether you&apos;re looking to implement a framework or do a gap assessment, we&apos;re here to guide you every step of the way.
             </em>
           </p>
         </article>

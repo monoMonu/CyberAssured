@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import CustomerPledges from "@/sections/CustomerPledge";
-import ExpertServices from "@/sections/ExpertServices";
+// import CustomerPledges from "@/sections/CustomerPledge";
+// import ExpertServices from "@/sections/ExpertServices";
 import HeroCarousel from "@/sections/HeroSec";
 import ManagedServices from "@/sections/ManagedServices";
 import SecurityInsightsSection from "@/sections/SecurityInsights";

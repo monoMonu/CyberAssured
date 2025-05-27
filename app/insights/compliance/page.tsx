@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 export default function PhishingPage() {
   return (
     <main className="bg-white text-gray-900 px-4 sm:px-8 md:px-16 py-24">
       <div className="max-w-4xl mx-auto">
 
         {/* Cover Image */}
-        <img
+        <Image
           src="/insight-1.jpg"
           alt="Cybersecurity Frameworks"
           className="w-full h-[22rem] object-cover rounded-xl shadow mb-12"
@@ -17,7 +19,7 @@ export default function PhishingPage() {
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-10">
-          Compliance-Driven Security Operations: Why It’s No Longer Optional for Organizations
+          Compliance-Driven Security Operations: Why It&apos;s No Longer Optional for Organizations
         </h1>
 
         {/* Content */}
@@ -37,9 +39,9 @@ export default function PhishingPage() {
           `}</style>
 
           <p>
-            In today’s fast-evolving threat landscape, cybersecurity is no longer just an IT concern—it’s a <strong>business imperative</strong>. And at the heart of a mature cybersecurity posture lies <strong>compliance-driven security operations</strong>.
-            As the Founder of CyberAssured, I’ve had the opportunity to work with organizations across industries, many of whom struggle with the same challenge: balancing security investments with ever-growing compliance demands.
-            Let’s explore why security operations driven by compliance requirements are no longer a “nice-to-have,” but a non-negotiable pillar of any enterprise risk management strategy.
+            In today&apos;s fast-evolving threat landscape, cybersecurity is no longer just an IT concern—it&apos;s a <strong>business imperative</strong>. And at the heart of a mature cybersecurity posture lies <strong>compliance-driven security operations</strong>.
+            As the Founder of CyberAssured, I&apos;ve had the opportunity to work with organizations across industries, many of whom struggle with the same challenge: balancing security investments with ever-growing compliance demands.
+            Let&apos;s explore why security operations driven by compliance requirements are no longer a “nice-to-have,” but a non-negotiable pillar of any enterprise risk management strategy.
 
           </p>
 
@@ -50,14 +52,14 @@ export default function PhishingPage() {
 
           <h2>Why Compliance-Driven Security Operations Matter</h2>
           <ul>
-            <li><strong>1.	Regulations Are Expanding</strong> whether it’s GDPR, SAMA CSF, UAE PDPL, NIST, ISO 27001, or PCI DSS, the regulatory landscape is expanding rapidly. Non-compliance doesn’t just risk fines—it puts your brand and business continuity on the line.</li>
+            <li><strong>1.	Regulations Are Expanding</strong> whether it&apos;s GDPR, SAMA CSF, UAE PDPL, NIST, ISO 27001, or PCI DSS, the regulatory landscape is expanding rapidly. Non-compliance doesn&apos;t just risk fines—it puts your brand and business continuity on the line.</li>
             <li><strong>2.	It Bridges the Gap Between IT & Business</strong> compliance frameworks provide structured guidelines that help align security controls with business objectives. When security operations are guided by compliance, they become strategic rather than reactive.</li>
             <li><strong>3.	Compliance Forces Accountability </strong> documentation, monitoring, and auditing help organizations move from ad-hoc processes to structured, measurable operations. This improves not only security maturity but also internal governance and accountability.</li>
             
           </ul>
 
           <h2>Which Framework is the Most Used and Why?</h2>
-          <p>The NIST Cybersecurity Framework (CSF) is arguably the most widely used framework globally. Here’s why:</p>
+          <p>The NIST Cybersecurity Framework (CSF) is arguably the most widely used framework globally. Here&apos;s why:</p>
           <ul>
             <li><strong>Flexibility:</strong> It can be tailored to fit organizations of all sizes and industries.</li>
             <li><strong>Comprehensiveness:</strong> It covers all aspects of cybersecurity, from risk assessment to incident response.</li>
@@ -75,8 +77,8 @@ export default function PhishingPage() {
 
           <h2>Final Thoughts</h2>
           <p>
-            Compliance is not the end goal—it’s the baseline. When your security operations are built around it, you reduce risk, win customer trust, and stay ahead of both regulators and attackers.
-            Let’s stop treating compliance like an annual audit, and start embedding it into our day-to-day security mindset.
+            Compliance is not the end goal—it&apos;s the baseline. When your security operations are built around it, you reduce risk, win customer trust, and stay ahead of both regulators and attackers.
+            Let&apos;s stop treating compliance like an annual audit, and start embedding it into our day-to-day security mindset.
 
           </p>
           <p>
