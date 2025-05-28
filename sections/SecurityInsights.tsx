@@ -12,7 +12,7 @@ const insightsData = [
   },
   {
     imageUrl: '/compliance.jpg',
-    category: '',
+    category: 'Threat Landscape',
     title: "Compliance-Driven Security Operations: Why It’s No Longer Optional for Organizations",
     date: '13th Jan 2022',
     link: '/insights/compliance',
@@ -36,9 +36,12 @@ const SecurityInsightsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {insightsData.map((insight, index) => (
-            <InsightCard key={index} {...insight} />
+            <div key={index} className="h-full">
+              <InsightCard {...insight} />
+            </div>
           ))}
         </div>
+
 
         {/* View All Link - Optional */}
         {/* 

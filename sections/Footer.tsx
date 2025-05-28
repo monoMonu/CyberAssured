@@ -1,4 +1,4 @@
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Twitter, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -18,10 +18,10 @@ const Footer = () => {
                      />
                   </Link>
                   <a
-                     href="tel:+1234567890" 
+                     href="tel: +971 02 020 2202" 
                      className="text-primary mb-6 text-xl font-bold hover:text-secondary transition-colors duration-300" 
                   >
-                     +1 (234) 567-890
+                      +971 02 020 2202
                   </a>
                   <div className="flex space-x-6 justify-center md:justify-start">
                      <a
@@ -39,6 +39,14 @@ const Footer = () => {
                         className="text-primary hover:text-secondary transition-colors duration-300" 
                      >
                         <Twitter size={28} />
+                     </a>
+                     <a
+                        href="" 
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        className="text-primary hover:text-secondary transition-colors duration-300" 
+                     > contact@cyberassured.ae
+                        <Mail size={28} />
                      </a>
                   </div>
                </div>
