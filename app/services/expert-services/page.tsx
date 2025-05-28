@@ -63,7 +63,7 @@ function page() {
                "Comprehensive brand exposure reporting and analytics"
             ]}
             linkText="Protect Your Brand"
-            linkHref="#"
+            linkHref="/contact"
             imageSrc="/Brand-Protection&Digital-Risk-Monitoring.png"
             imageAlt="Expert Services"
             reverse={true}
@@ -85,7 +85,7 @@ function page() {
                "Identity lifecycle management and governance"
             ]}
             linkText="Implement Zero Trust"
-            linkHref="#"
+            linkHref="/contact"
             imageSrc="/Zero-Trust-Identity-Sec.png"
             imageAlt="Expert Services"
             reverse={false}
@@ -96,7 +96,7 @@ function page() {
             description1="Navigate complex regulatory landscapes with confidence. Our compliance experts don't just help you check boxes -- we build security programs that actually reduce risk while meeting regulatory requirements efficiently,"
             description2="With extensive experience across multiple frameworks and industries, we translate regulatory complexity into actionable security implementations that protect your business and satisfy auditors."
             linkText="Secure Your Operations"
-            linkHref="#"
+            linkHref="/contact"
             bullets={[
                "ISO 27001/27002 implementation and certification support",
                "GDPR compliance assessment and data protection strategies",
@@ -118,7 +118,7 @@ function page() {
             description1="Bridge the gap between operational technology and information technology security, As industrial systems become increasingly connected, the convergence of OT and IT creates new attack vectors that traditional security approaches can't address."
             description2="Our unified security approach protects both your business systems and critical operational infrastructure with specialized expertise in industrial control systems, manufacturing processes, and connected loT environments."
             linkText="Secure Your Operations"
-            linkHref="#"
+            linkHref="/contact"
             bullets={[
                "Industrial control system (ICS) security assessment",
                "SCADA system monitoring and protection",
@@ -143,7 +143,7 @@ function page() {
                   Our specialized expertise goes beyond traditional cybersecurity. We deliver strategic security solutions that protect your brand, secure your identities, ensure compliance, and unify your IT and OT environments.   
                </p>
                <div className="flex mt-10 justify-center gap-6 flex-wrap">
-                  <Link href={"#services"}>
+                  <Link href={"/contact"}>
                      <Button className="secondary-btn">
                         Schedule Expert Consultation
                      </Button>

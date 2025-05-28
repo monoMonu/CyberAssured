@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react'
 import {
   FolderLock,
@@ -6,6 +8,7 @@ import {
   LandPlot,
   Milestone
 } from 'lucide-react' // Lucide icon components
+import { useRouter } from 'next/navigation'; // for Next.js 13+
 
 function ManagedServicesCard() {
   const managedServicesCard = [
@@ -73,6 +76,8 @@ function ManagedServicesCard() {
     LandPlot
   }
 
+  const router = useRouter();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
       {managedServicesCard.map((pkg, idx) => {
@@ -118,7 +123,8 @@ function ManagedServicesCard() {
               {/* CTA Button */}
               <div className="flex justify-center mt-4">
                 <button
-                  className={`bg-gradient-to-r ${pkg.badgeColor} text-white text-sm py-2 px-5 rounded-full shadow hover:opacity-90 transition`}
+                  onClick={() => router.push('/services/expert-services')}
+                  className={`bg-gradient-to-r ${pkg.badgeColor} text-white text-sm py-2 px-5 rounded-full shadow hover:brightness-110 hover:scale-105 cursor-pointer transition`}
                 >
                   {pkg.buttonText}
                 </button>
