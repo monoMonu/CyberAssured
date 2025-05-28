@@ -1,55 +1,89 @@
-import React from 'react'
+"use client";
+import Image from "next/image";
+import { Users, ShieldCheck, BadgeCheck, Handshake } from "lucide-react";
 
-const reasons = [
+const values = [
   {
-    number: '1',
-    title: 'Integrated Solutions',
-    description:
-      'Unlike traditional IT resellers, we deliver unified solutions where security technologies work in harmony.',
+    icon: <Users className="text-purple-600 w-6 h-6" />,
+    title: "Customer Success",
+    desc: "We ensure our platform delivers real value with dedicated support and onboarding.",
+    position: "top-left",
   },
   {
-    number: '2',
-    title: 'Expert Guidance',
-    description:
-      'Battle-tested security professionals who understand real-world threats and regulatory compliance.',
+    icon: <ShieldCheck className="text-purple-600 w-6 h-6" />,
+    title: "Efficiency",
+    desc: "We help clients streamline processes with minimal resource usage.",
+    position: "top-right",
   },
   {
-    number: '3',
-    title: 'Strategic Partnerships',
-    description:
-      'Exclusive partnerships with industry leaders ensure you get the best technology at competitive prices.',
+    icon: <BadgeCheck className="text-purple-600 w-6 h-6" />,
+    title: "Transparency",
+    desc: "We promote clear communication and open data for confident decision-making.",
+    position: "bottom-left",
   },
   {
-    number: '4',
-    title: 'Consultative Approach',
-    description:
-      'We assess your actual risk profile before recommending solutions—sometimes that means less technology, not more.',
+    icon: <Handshake className="text-purple-600 w-6 h-6" />,
+    title: "Collaboration",
+    desc: "We work closely with our clients to achieve joint cybersecurity goals.",
+    position: "bottom-right",
   },
-]
+];
 
-function WhyCyberAssured() {
+export default function CoreValuesShowcase() {
   return (
-    <section className="text-center py-16 bg-white">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-purple-700 mb-4">
-        Why CyberAssured Stands Apart
-      </h2>
-      <p className="text-gray-500 max-w-xl mx-auto mb-12">
-        We bring deep cybersecurity expertise built from real-world experience
-      </p>
+    <section className="bg-[#ffffff] pt-20 pb-0 px-4 overflow-hidden">
+      {/* Title */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-extrabold text-gray-900">
+          Our core values <span className="text-primary">guide everything</span>
+        </h2>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4 md:px-10">
-        {reasons.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-center text-center">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 text-white font-bold text-lg mb-4">
-              {item.number}
+      {/* Grid layout */}
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center pb-0">
+        {/* LEFT cards */}
+        <div className="flex flex-col gap-10 mb-15">
+          {values.filter(v => v.position.includes("left")).map((val, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-6 rounded-2xl shadow-md w-[300px] min-h-[160px] flex flex-col justify-between"
+            >
+              <div className="flex items-center gap-4 mb-2">
+                <div className="bg-purple-100 p-3 rounded-full">{val.icon}</div>
+                <h3 className="text-lg font-semibold text-gray-900">{val.title}</h3>
+              </div>
+              <p className="text-sm text-gray-600">{val.desc}</p>
             </div>
-            <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-            <p className="text-sm text-gray-500">{item.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* CENTER phone image */}
+        <div className="relative w-full h-full flex items-end justify-center">
+          <Image
+            src="/phone-img-5.png"
+            alt="Phone demo"
+            width={400}
+            height={700}
+            className="z-10 object-contain w-[200px] md:w-[350px] h-auto mb-[-8px]" // mb-[-8px] pulls image to bottom
+          />
+        </div>
+
+        {/* RIGHT cards */}
+        <div className="flex flex-col gap-10 mb-15">
+          {values.filter(v => v.position.includes("right")).map((val, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-6 rounded-2xl shadow-md w-[300px] min-h-[160px] flex flex-col justify-between"
+            >
+              <div className="flex items-center gap-4 mb-2">
+                <div className="bg-purple-100 p-3 rounded-full">{val.icon}</div>
+                <h3 className="text-lg font-semibold text-gray-900">{val.title}</h3>
+              </div>
+              <p className="text-sm text-gray-600">{val.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-  )
+  );
 }
-
-export default WhyCyberAssured

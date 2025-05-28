@@ -14,12 +14,13 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
             <Link href="/" passHref>
               <Image
-                src="/logo.svg"
-                alt="CyberAssured"
-                height={75}
-                width={200}
-                className="invert"
-              />
+                  src="/ca_logoo.png"
+                  alt="CyberAssured Logo"
+                  height={220}
+                  width={220}
+                  className="object-contain"
+                  />
+
             </Link>
 
             <a

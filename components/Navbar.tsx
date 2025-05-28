@@ -5,6 +5,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import Image from 'next/image';
 
 export default function Navbar() {
    const [showServices, setShowServices] = useState(false);
@@ -13,11 +14,19 @@ export default function Navbar() {
    return (
       <div className="mx-auto bg-card sticky top-0 z-50 shadow">
          <nav className="max-w-screen-xl w-full flex items-center justify-between px-4 md:px-8 h-20 mx-auto relative">
-            <div className="text-3xl font-bold text-foreground">
-               <Link href="/" className="flex items-center">
-                  <span className="text-primary font-black">CyberAssured</span>
+            <div className="flex items-center">
+               <Link href="/" className="flex items-center font-bold text-2xl">
+                  <Image
+                     src="/logo_only.png"  // Make sure this path matches your public folder location
+                     alt="CyberAssured Logo"
+                     width={40}
+                     height={40}
+                     className="object-contain m-2 "
+                     priority
+                  />Cyber<span className="text-[#0FB5FE] font-bold text-2xl" >Assured</span> 
                </Link>
-            </div>
+               </div>
+
 
             <div className="md:hidden">
                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-foreground">
