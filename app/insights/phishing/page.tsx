@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function PhishingPage() {
   return (
@@ -6,11 +6,11 @@ export default function PhishingPage() {
       <div className="max-w-4xl mx-auto">
 
         {/* Cover Image */}
-        <Image
+        {/* <Image
           src="/insight-1.jpg"
           alt="Cybersecurity Frameworks"
           className="w-full h-[22rem] object-cover rounded-xl shadow mb-12"
-        />
+        /> */}
 
         {/* Metadata */}
         <p className="text-sm text-gray-500 mb-3">

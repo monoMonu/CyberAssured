@@ -16,10 +16,10 @@ function ManagedServices() {
          </div>
          <div className="mt-8 text-center">
             <Link
-               href="/insights"
+               href="/contact"
                className="group inline-block relative text-secondary text-base transition-all duration-300 ease-in-out transform hover:scale-105"
             >
-               <span className="px-2 py-1">
+               <span className="px-2 py-1 text-primary">
                   Need help finding your SOC ?
                </span>
                <span

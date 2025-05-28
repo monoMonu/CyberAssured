@@ -105,7 +105,7 @@ function page() {
          </section>
          <section className="py-16" id='core-values'>
             <div className="container max-w-screen-xl mx-auto px-4">
-               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center text-secondary drop-shadow">
+               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center text-primary drop-shadow">
                   Our Core Values
                </h2>
                <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-base">

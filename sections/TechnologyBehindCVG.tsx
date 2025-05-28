@@ -14,7 +14,7 @@ export default function TechnologyBehindCVG() {
    return (
       <section className="py-12 px-4 md:px-8 lg:px-16 max-w-screen-xl mx-auto">
          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-[color:var(--secondary)]">
+            <h2 className="text-3xl md:text-5xl font-bold text-primary">
                The Technology Behind CyberVanguard
             </h2>
             <p className="text-muted-foreground mt-4 mx-auto">

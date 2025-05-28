@@ -22,7 +22,7 @@ export default function Home() {
             Enterprice-grade cybersecurity that combines AI-driven threat detection, risk based vulnerability management, and 24/7 monitoring -  all delivered at a price that makes sense for growing businesses.
           </p>
           <div className="flex mt-10 justify-center gap-6 flex-wrap">
-            <Link href={"#services"}>
+            <Link href={"/contact"}>
               <Button className="secondary-btn">
                 Contact us
               </Button>
@@ -53,14 +53,14 @@ export default function Home() {
             Contact our experts today for a comprehensive security assessment and discover how we can help protect what matters most for your organization.  
           </p>
           <div className="flex mt-10 justify-center gap-6 flex-wrap">
-            <Link href={"#services"}>
+            <Link href={"/contact"}>
               <Button className="secondary-btn">
                 Get Free Assessment
               </Button>
             </Link>
-            <Link href={"/services/managed-services"}>
+            <Link href={"/contact"}>
               <Button className="primary-btn">
-                Call Us Today
+                Contact Us Today
               </Button>
             </Link>
           </div>

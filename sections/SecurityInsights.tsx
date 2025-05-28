@@ -4,21 +4,21 @@ import InsightCard from '@/components/InsightCard';
 
 const insightsData = [
   {
-    imageUrl: '/insight-1.jpg',
+    imageUrl: '/insight-2.jpg',
     category: 'Threat Landscape',
     title: 'The Strategic Guide to Selecting the Right SOC Managed Service Provider',
     date: '13th Jan 2022',
     link: '/insights/soc',
   },
   {
-    imageUrl: '/insight-1.jpg',
+    imageUrl: '/compliance.jpg',
     category: '',
     title: "Compliance-Driven Security Operations: Why It’s No Longer Optional for Organizations",
     date: '13th Jan 2022',
     link: '/insights/compliance',
   },
   {
-    imageUrl: '/insight-1.jpg',
+    imageUrl: '/insight-3.jpg',
     category: 'Threat Landscape',
     title: 'Understanding Industry-Standard Cybersecurity Frameworks: A Guide for Businesses',
     date: '13th Jan 2022',
