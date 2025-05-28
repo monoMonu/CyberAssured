@@ -23,49 +23,51 @@ const HomeHeroBGSlider = () => {
    return (
       <section className="relative max-h-screen w-full overflow-hidden text-primary-foreground">
          <Swiper
-            ref={swiperRef}
-            modules={[Navigation, Autoplay, Pagination]}
-            spaceBetween={0}
-            slidesPerView={1}
-            pagination={{
-               clickable: true,
-               renderBullet: (index, className) => {
-                  return `<span class="${className} rounded-full w-2.5 h-2.5 inline-block"></span>`;
-               }
-            }}
-            loop={true}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            speed={800}
-            className="h-[calc(100vh-160px)] mt-10 w-full relative"
+         ref={swiperRef}
+         modules={[Navigation, Autoplay, Pagination]}
+         spaceBetween={0}
+         slidesPerView={1}
+         pagination={{
+            clickable: true,
+            renderBullet: (index, className) => {
+               return `<span class="${className} rounded-full w-2.5 h-2.5 inline-block"></span>`;
+            }
+         }}
+         loop={true}
+         autoplay={{ delay: 5000, disableOnInteraction: false }}
+         speed={800}
+         className="h-[70vh] w-full relative"
          >
-            {sliders.map((slider) => (
-               <SwiperSlide key={slider.id}>
+         {sliders.map((slider) => (
+            <SwiperSlide key={slider.id}>
+               <div
+               className="relative w-full h-full"
+               role="img"
+               aria-label={slider.alt}
+               >
+               {slider.src.endsWith('.mp4') ? (
+                  <video
+                     src={slider.src}
+                     autoPlay
+                     loop
+                     muted
+                     playsInline
+                     className="absolute top-0 left-0 w-full h-full object-cover"
+                  />
+               ) : (
                   <div
-                     className="relative h-full mx-auto"
-                     role="img"
-                     aria-label={slider.alt}
-                  >
-                     {slider.src.endsWith('.mp4') ? (
-                        <video
-                           src={slider.src}
-                           autoPlay
-                           loop
-                           muted
-                           className="relative h-full mx-auto"
-                        />
-                     ) : (
-                        <div
-                           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-                           style={{ backgroundImage: `url(${slider.src})` }}
-                        />
-                     )}
-                  </div>
-               </SwiperSlide>
-            ))}
+                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+                     style={{ backgroundImage: `url(${slider.src})` }}
+                  />
+               )}
+               </div>
+            </SwiperSlide>
+         ))}
          </Swiper>
 
+
          {/* Navigation Controls */}
-         <button
+         {/* <button
             onClick={() => swiperRef.current?.swiper?.slidePrev()}
             aria-label="Previous Slide"
             className="absolute z-20 left-4 top-1/2 -translate-y-1/2 bg-accent text-accent-foreground p-2 rounded-full shadow-md hover:opacity-90"
@@ -79,7 +81,7 @@ const HomeHeroBGSlider = () => {
             className="absolute z-20 right-4 top-1/2 -translate-y-1/2 bg-accent text-accent-foreground p-2 rounded-full shadow-md hover:opacity-90"
          >
             <ChevronRight size={28} />
-         </button>
+         </button> */}
       </section>
    );
 };

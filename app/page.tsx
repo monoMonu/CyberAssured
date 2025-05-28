@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex mt-10 justify-center gap-6 flex-wrap">
             <Link href={"#services"}>
               <Button className="secondary-btn">
-                View Packages
+                Contact us
               </Button>
             </Link>
             <Link href={"/services/managed-services"}>
