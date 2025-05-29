@@ -21,7 +21,7 @@ const HomeHeroBGSlider = () => {
    const swiperRef = useRef<any>(null);
 
    return (
-      <section className="relative h-screen w-full overflow-hidden text-primary-foreground">
+      <section className="relative max-h-screen w-full overflow-hidden text-primary-foreground">
          <Swiper
          ref={swiperRef}
          modules={[Navigation, Autoplay, Pagination]}
@@ -36,7 +36,7 @@ const HomeHeroBGSlider = () => {
          loop={true}
          autoplay={{ delay: 5000, disableOnInteraction: false }}
          speed={800}
-         className="h-full w-full relative"
+         className="h-[80vh] w-full relative "
          >
          {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
