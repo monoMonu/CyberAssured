@@ -36,7 +36,7 @@ const HomeHeroBGSlider = () => {
          loop={true}
          autoplay={{ delay: 5000, disableOnInteraction: false }}
          speed={800}
-         className="h-[80vh] w-full relative "
+         className="h-[80vh] w-full relative sm:h-[45vh] lg:h-[80vh] xl:h-[80vh] max-h-[900px]"
          >
          {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
