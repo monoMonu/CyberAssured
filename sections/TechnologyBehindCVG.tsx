@@ -1,39 +1,58 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
+'use client';
+
+import { CardStack } from "@/components/ui/card-stack";
+import {
+  Bolt,
+  Target,
+  User,
+  SatelliteDish,
+  BrainCircuit,
+  Bot,
+} from "lucide-react";
 
 const technologies = [
-   { icon: "⚡", label: "Elastic Computing Power" },
-   { icon: "🎯", label: "Dynamic Threat Models" },
-   { icon: "👤", label: "User and Entity Behavioral Analytics (UEBA)" },
-   { icon: "📡", label: "Threat Intelligence Feeds" },
-   { icon: "💾", label: "Advanced Machine Learning" },
-   { icon: "🤖", label: "AI with Actionable Intelligence" },
+  { id: 1, icon: <Bolt className="h-16 w-16 text-primary" />, label: "Elastic Computing Power" },
+  { id: 2, icon: <Target className="h-16 w-16 text-primary" />, label: "Dynamic Threat Models" },
+  { id: 3, icon: <User className="h-16 w-16 text-primary" />, label: "User & Entity Behavioral Analytics (UEBA)" },
+  { id: 4, icon: <SatelliteDish className="h-16 w-16 text-primary" />, label: "Threat Intelligence Feeds" },
+  { id: 5, icon: <BrainCircuit className="h-16 w-16 text-primary" />, label: "Advanced Machine Learning" },
+  { id: 6, icon: <Bot className="h-16 w-16 text-primary" />, label: "AI with Actionable Intelligence" },
 ];
 
 export default function TechnologyBehindCVG() {
-   return (
-      <section className="py-12 px-4 md:px-8 lg:px-16 max-w-screen-xl mx-auto">
-         <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary">
-               The Technology Behind CyberVanguard
-            </h2>
-            <p className="text-muted-foreground mt-4 mx-auto">
-               The CyberVanguard platform goes beyond simple threat data analysis and correlation.
-               CyberVanguard leverages advanced technologies to deliver unparalleled security intelligence.
-            </p>
-         </div>
-         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-            {technologies.map((tech) => (
-               <Card key={tech.label} className="text-center items-center justify-center min-h-40 px-6">
-                  <CardContent>
-                     <div className="text-3xl mb-2">{tech.icon}</div>
-                     <p className="font-semibold text-[color:var(--foreground)]">
-                        {tech.label}
-                     </p>
-                  </CardContent>
-               </Card>
-            ))}
-         </div>
-      </section>
-   );
+  return (
+    <section className="py-20 px-6 bg-white text-black">
+      <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+        
+        {/* Left Text Section */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            <span className="text-black">The Technology Behind </span>
+            <span className="text-primary">CyberVanguard</span>
+          </h2>
+          <p className="mt-6 text-lg text-primary max-w-lg">
+            CyberVanguard leverages advanced AI and threat modeling technologies to secure your enterprise in real-time.
+          </p>
+        </div>
+
+        {/* Right CardStack Section */}
+        <div className="lg:w-1/2 flex justify-center">
+          <CardStack
+            items={technologies.map((tech) => ({
+              id: tech.id,
+              name: tech.label, // keep this a plain string
+              designation: "Technology",
+              content: (
+                <div className="flex justify-center items-center mb-4">
+                  {tech.icon}
+                </div>
+              ),
+            }))}
+            offset={12}
+            scaleFactor={0.05}
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
