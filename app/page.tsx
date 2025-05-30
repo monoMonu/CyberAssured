@@ -16,7 +16,7 @@ export default function Home() {
       <section className="pt-24 pb-20">
         <div className="container max-w-screen-xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-primary">
-            Inteligent Secrity Operations
+            Intelligent Security Operations
           </h2>
           <p className="text-center md:text-xl text-lg text-muted-foreground my-6">
             Enterprice-grade cybersecurity that combines AI-driven threat detection, risk based vulnerability management, and 24/7 monitoring -  all delivered at a price that makes sense for growing businesses.

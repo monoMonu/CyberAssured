@@ -64,7 +64,7 @@ function page() {
             ]}
             linkText="Protect Your Brand"
             linkHref="/contact"
-            imageSrc="/Brand-Protection&Digital-Risk-Monitoring.png"
+            imageSrc="/expertServices/expertimage2.png"
             imageAlt="Expert Services"
             reverse={true}
          />
@@ -129,7 +129,7 @@ function page() {
                "Incident response for operational disruptions",
                "Regulatory compliance for critical infrastructure",
             ]}
-            imageSrc="/OT-IT-sec.png"
+            imageSrc="/expertServices/expertimage1.png"
             imageAlt="Expert Services"
             bgColor='bg-background'
          />
