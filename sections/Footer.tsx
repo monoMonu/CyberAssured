@@ -124,7 +124,7 @@ const Footer = () => {
             <Link href="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>
             <Link href="/cookies" className="hover:text-white transition">Cookies</Link>
           </div>
-          <p className="mt-2 md:mt-0">&copy; 2024 CyberAssured</p>
+          <p className="mt-2 md:mt-0">&copy; 2025 CyberAssured</p>
         </div>
       </div>
     </footer>
