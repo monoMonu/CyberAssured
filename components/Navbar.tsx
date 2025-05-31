@@ -12,6 +12,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
    const [scrolled, setScrolled] = useState(false);
    const [mounted, setMounted] = useState(false);
+   const [hideTimeout, setHideTimeout] = useState<NodeJS.Timeout | null>(null);
+
 
    useEffect(() => {
    setMounted(true);
@@ -75,10 +77,19 @@ export default function Navbar() {
             isScrolled ? "text-black" : "text-white"
          )}
           href="/">Home</Link>
+          <div className="relative h-full py-3">
           <div
-            className="relative h-full py-3"
-            onMouseEnter={() => setShowServices(true)}
-            onMouseLeave={() => setShowServices(false)}
+            
+            onMouseEnter={() => {
+               if (hideTimeout) clearTimeout(hideTimeout); // cancel pending hide
+               setShowServices(true);
+            }}
+            onMouseLeave={() => {
+               const timeout = setTimeout(() => {
+                  setShowServices(false);
+               }, 100); // 3 seconds
+               setHideTimeout(timeout);
+            }}
           >
             <span
                className={cn(
@@ -113,6 +124,7 @@ export default function Navbar() {
                 </div>
               </div>
             )}
+          </div>
           </div>
           <Link 
           className={cn(
