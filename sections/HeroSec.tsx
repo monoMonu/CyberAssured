@@ -8,20 +8,20 @@ const messages = [
     sub: "PROTECTING PRIVILEGED ACCESS AT SCALE WITH A CONVERGED IDENTITY PLATFORM TRUSTED BY 1500+ ORGANIZATIONS WORLDWIDE.",
   },
   {
-    main: "ADVANCED THREAT DETECTION FOR MODERN NETWORKS",
-    sub: "LEVERAGE AI-POWERED DEFENSES AGAINST REAL-TIME CYBER ATTACKS AND BREACHES.",
+    main: "PRIORITIZE WHAT MATTERS: \nRISK-BASED VULNERABILITY MANAGEMENT",
+    sub: "Quantify cyber risk in real financial terms and focus remediation where it counts most.",
   },
   {
-    main: "ENDPOINT PROTECTION WITHOUT COMPROMISE",
-    sub: "SECURE DEVICES AT SCALE WHILE MAINTAINING PERFORMANCE AND PRODUCTIVITY.",
+    main: "END-TO-END CYBERSECURITY FOR OT AND IT ECOSYSTEMS",
+    sub: "SAFEGUARD CRITICAL OPERATIONS WITH ZERO-TRUST CONTROLS, REAL-TIME MONITORING, AND ADVANCED THREAT RESPONSE.",
   },
   {
-    main: "SIMPLIFY IDENTITY MANAGEMENT AT SCALE",
-    sub: "CENTRALIZED CONTROL AND ACCESS GOVERNANCE FOR ALL USERS AND APPS.",
+    main: "WE PREDICT CYBER THREATS",
+    sub: "WE COMBINE THE POWER OF CYBER INTELLIGENCE, BRAND MONITORING & ATTACK SURFACE MONITORING TO GIVE CONTEXT TO OUR CUSTOMERS' DIGITAL RISKS.",
   },
   {
-    main: "UNIFY YOUR SECURITY POSTURE",
-    sub: "INTEGRATE ALL LAYERS OF IDENTITY AND ACCESS FOR MAXIMUM VISIBILITY.",
+    main: "CYBER THREATS DON'T CLOCK OUT. NEITHER DO WE.",
+    sub: "NEXT-GEN 24/7 SOC-AS-A-SERVICE \n BUILT FOR GROWING BUSINESSES - POWERFUL PROTECTION SMARTLY PRICED \n START RISK-FREE WITH A 30-DAY PILOT",
   },
 ];
 
@@ -60,14 +60,14 @@ const HomeHeroBGSlider = () => {
                 className="flex-shrink-0 w-full text-right"
               >
                 <h1
-                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-4 text-stroke-purple uppercase tracking-wide"
+                  className="text-lg sm:text-5xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-4 text-stroke-purple uppercase tracking-wide"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {msg.main}
                 </h1>
 
                 <p
-                  className="text-sm sm:text-base md:text-lg text-gray-200"
+                  className="text-sm sm:text-2xl md:text-lg text-gray-200"
                   style={{ fontFamily: "'Roboto', sans-serif" }}
                 >
                   {msg.sub}
