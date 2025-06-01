@@ -60,11 +60,12 @@ const HomeHeroBGSlider = () => {
                 className="flex-shrink-0 w-full text-right"
               >
                 <h1
-                  className="text-lg sm:text-5xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-4"
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-4 text-stroke-purple uppercase tracking-wide"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {msg.main}
                 </h1>
+
                 <p
                   className="text-sm sm:text-base md:text-lg text-gray-200"
                   style={{ fontFamily: "'Roboto', sans-serif" }}

@@ -4,6 +4,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* globals.css or app/globals.css */
+.text-stroke-purple {
+  color: white;
+  -webkit-text-stroke: 1.5px #A855F7; /* Adjust thickness & color */
+  text-shadow: none;
+}
+
 
 body {
   font-family: 'Roboto', sans-serif;
