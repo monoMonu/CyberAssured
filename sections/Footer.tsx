@@ -1,6 +1,6 @@
 'use client';
 
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -56,21 +56,21 @@ const Footer = () => {
 
             <div className="flex space-x-4 mt-2">
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/company/cyberassured-llc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition cursor-pointer"
               >
                 <Linkedin size={24} />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition cursor-pointer"
               >
                 <Twitter size={24} />
-              </a>
+              </a> */}
             </div>
 
             {/* Office Addresses */}
