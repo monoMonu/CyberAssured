@@ -46,17 +46,16 @@ export default function Navbar() {
          )}
       >
          {/* logo */}
-         <Link href="/" className="flex items-center font-bold text-2xl">
+         <Link href="/" className="flex items-center font-bold text-2xl text-[#220E6F]">
             <Image
             src="/logo_only.png"
             alt="CyberAssured Logo"
             width={40}
             height={40}
-            className="object-contain m-2"
+            className="object-contain m-2 "
             priority
             />
-            Cyber
-            <span className="text-[#0FB5FE] font-bold text-2xl ml-1">Assured</span>
+            Cyber<span className="text-[#0FB5FE] font-bold text-2xl">Assured</span>
          </Link>
 
         {/* Mobile Menu Toggle */}
