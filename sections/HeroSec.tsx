@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const messages = [
   {
@@ -27,16 +28,23 @@ const messages = [
 
 const HomeHeroBGSlider = () => {
   const [current, setCurrent] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    const timeout = setTimeout(() => setVisible(false), 4500);
     const interval = setInterval(() => {
+      setVisible(true);
       setCurrent((prev) => (prev + 1) % messages.length);
     }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, [current]);
 
   return (
-    <section className="relative w-full h-screen sm:h-[60vh] md:h-[70vh] lg:h-[80vh] min-h-[400px] overflow-hidden">
+    <section className="relative w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] min-h-[400px] overflow-hidden">
       {/* Background Video */}
       <video
         src="/UpdatedBanner/cubeBanner.mp4"
@@ -48,33 +56,33 @@ const HomeHeroBGSlider = () => {
       />
 
       {/* Right-Aligned Responsive Text */}
-      <div className="absolute inset-0 z-10 flex items-center justify-end bg-black/50 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="w-full max-w-[600px] overflow-hidden">
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {messages.map((msg, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-full text-right"
+      <div className="absolute inset-0 z-10 flex items-center justify-end bg-transparent px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="w-full max-w-[600px] overflow-hidden text-right">
+          <AnimatePresence mode="wait">
+            {visible && (
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.6 }}
               >
                 <h1
-                  className="text-lg sm:text-5xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-4 text-stroke-purple uppercase tracking-wide"
+                  className="text-lg sm:text-3xl md:text-3xl lg:text-5xl font-extrabold leading-tight mb-4 uppercase tracking-wide whitespace-pre-line text-primary"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  {msg.main}
+                  {messages[current].main}
                 </h1>
 
                 <p
-                  className="text-sm sm:text-2xl md:text-lg text-gray-200"
+                  className="text-sm sm:text-2xl md:text-lg text-gray-200 whitespace-pre-line"
                   style={{ fontFamily: "'Roboto', sans-serif" }}
                 >
-                  {msg.sub}
+                  {messages[current].sub}
                 </p>
-              </div>
-            ))}
-          </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>
