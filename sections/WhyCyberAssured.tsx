@@ -34,8 +34,8 @@ export default function CoreValuesShowcase() {
     <section className="bg-[#ffffff] pt-20 pb-0 px-4 overflow-hidden">
       {/* Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold text-gray-900">
-          Our core values <span className="text-primary">guide everything</span>
+        <h2 className="text-5xl font-bold text-primary">
+          Our Core Values <span className="text-primary">Guide Everything</span>
         </h2>
       </div>
 
