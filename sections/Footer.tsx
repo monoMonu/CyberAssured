@@ -14,20 +14,19 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
             <Link href="/" passHref>
               <Image
-                  src="/ca_logoo.png"
-                  alt="CyberAssured Logo"
-                  height={220}
-                  width={220}
-                  className="object-contain"
-                  />
-
+                src="/ca_logoo.png"
+                alt="CyberAssured Logo"
+                height={220}
+                width={220}
+                className="object-contain"
+              />
             </Link>
 
             <a
               href="tel:+971589788531"
               className="text-primary text-xl font-bold hover:text-secondary transition"
             >
-              +971 02 020 2202
+              +971589788531
             </a>
 
             <a
@@ -36,6 +35,23 @@ const Footer = () => {
             >
               <Mail size={20} />
               contact@cyberassured.ae
+            </a>
+
+            {/* ✅ WhatsApp Button */}
+            <a
+              href="https://wa.me/971589788531?text=Hello%20CyberAssured%20team%2C%20I'm%20interested%20in%20your%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 bg-[#29A819] text-white font-medium px-4 py-2 rounded-full shadow hover:bg-green-600 transition"
+            >
+              <Image
+                src="/whatsappIcon.png" // Place the icon in /public folder
+                alt="WhatsApp"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+              Chat with us
             </a>
 
             <div className="flex space-x-4 mt-2">

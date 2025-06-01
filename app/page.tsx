@@ -19,7 +19,7 @@ export default function Home() {
             Intelligent Security Operations
           </h2>
           <p className="text-center md:text-xl text-lg text-muted-foreground my-6">
-            Enterprice-grade cybersecurity that combines AI-driven threat detection, risk based vulnerability management, and 24/7 monitoring -  all delivered at a price that makes sense for growing businesses.
+            Enterprise-grade cybersecurity that combines AI-driven threat detection, risk based vulnerability management, and 24/7 monitoring -  all delivered at a price that makes sense for growing businesses.
           </p>
           <div className="flex mt-10 justify-center gap-6 flex-wrap">
             <Link href={"/contact"}>
