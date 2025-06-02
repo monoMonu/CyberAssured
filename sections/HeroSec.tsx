@@ -9,7 +9,7 @@ const messages = [
     sub: "PROTECTING PRIVILEGED ACCESS AT SCALE WITH A CONVERGED IDENTITY PLATFORM TRUSTED BY 1500+ ORGANIZATIONS WORLDWIDE.",
   },
   {
-    main: "PRIORITIZE WHAT MATTERS: \nRISK-BASED VULNERABILITY MANAGEMENT",
+    main: "PRIORITIZE WHAT MATTERS: RISK-BASED VULNERABILITY MANAGEMENT",
     sub: "Quantify cyber risk in real financial terms and focus remediation where it counts most.",
   },
   {
@@ -57,7 +57,7 @@ const HomeHeroBGSlider = () => {
 
       {/* Right-Aligned Responsive Text */}
       <div className="absolute inset-0 z-10 flex items-center justify-end bg-transparent px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="w-full max-w-[600px] overflow-hidden text-right">
+        <div className="w-full max-w-[600px] overflow-hidden text-left">
           <AnimatePresence mode="wait">
             {visible && (
               <motion.div
@@ -68,7 +68,7 @@ const HomeHeroBGSlider = () => {
                 transition={{ duration: 0.6 }}
               >
                 <h1
-                  className="text-lg sm:text-3xl md:text-3xl lg:text-5xl font-extrabold leading-tight mb-4 uppercase tracking-wide whitespace-pre-line text-primary"
+                  className="text-lg sm:text-5xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 uppercase tracking-wide whitespace-pre-line text-primary"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {messages[current].main}

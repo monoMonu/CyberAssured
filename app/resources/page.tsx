@@ -1,44 +1,57 @@
+import HeroBanner from "@/components/HeroBanner";
 import ResourceCard from "@/components/Resource-card"
 
 
 const reports = [
-   {
-      title: "Sample Key Risk Indicator report",
-      description:
-         "See an example of the monthly KRI reports we provide to our SOC customers, detailing risks, trends or threats detected over the period.",
-      imageUrl: "/expert-services-banner.jpg",
-      link: "#",
-   },
-   {
-      title: "Sample breach report",
-      description:
-         "If you've experienced a security incident this report details the event’s origin, impact and scale - and best practice guidance for how to defend against future breaches.",
-      imageUrl: "/expert-services-banner.jpg",
-      link: "#",
-   },
-   {
-      title: "Sample penetration test report",
-      description:
-         "A simulated attack to evaluate your organization's security posture, identifying vulnerabilities before attackers do.",
-      imageUrl: "/expert-services-banner.jpg",
-      link: "#",
-   },
-   {
-      title: "Sample SecureStart report",
-      description:
-         "A comprehensive baseline security assessment conducted during onboarding to ensure you're set up for protection.",
-      imageUrl: "/expert-services-banner.jpg",
-      link: "#",
-   },
-]
+  {
+    title: "The Ultimate Guide to Cybersecurity Certifications for Young Professionals",
+    description:
+    "In today’s digital age, cybersecurity is no longer just an IT concern—it’s a critical business priority. With threats evolving rapidly, organizations seek skilled professionals to protect their systems and data. For young professionals, the right certifications can launch or advance a cybersecurity career.",
+    imageUrl: "/expertServices/expertImage2.png",
+    link: "/resources/blog/blog1",
+  },
+  {
+    title: "Understanding Industry-Standard Cybersecurity Frameworks: A Guide for Businesses",
+    description:
+    "Cybersecurity frameworks are structured guidelines that help businesses manage risk, ensure compliance, and implement strong security controls. Learn how frameworks like NIST, ISO 27001, and CIS Controls can strengthen your organization’s security posture.",
+    imageUrl: "/Image2.png",
+    link: "/resources/blog/blog2",
+  },
+  {
+    title: "Cybersecurity Jobs: Key Insights for Professionals in Saudi Arabia and the UAE",
+    description:
+    "Driven by initiatives like Saudi Vision 2030 and the UAE’s Digital Economy Strategy, the GCC region is rapidly becoming a cybersecurity hub. Discover the growing demand, skill trends, and job opportunities in Riyadh, Dubai, Abu Dhabi, and beyond.",
+    imageUrl: "/expertServices/expertImage1.png",
+    link: "/resources/blog/blog3",
+  },
+  {
+    title: "Are You Really Ready for a Cyber Attack? Why Paper Plans Aren’t Enough",
+    description:
+    "Many organizations have incident response plans—on paper. But without real-world testing, these plans may fail. Discover why tabletop exercises, red teaming, and live simulations are crucial for true preparedness.",
+    imageUrl: "/Image1.png",
+    link: "/resources/blog/blog4",
+  },
+];
+
 
 export default function ResourcesPage() {
    return (
-      <section className="min-h-screen px-4 py-8 md:px-12 bg-background text-foreground">
+      <>
+      <HeroBanner
+            imageUrl="/Image3.png"
+            title="Resources"
+            subtitle="Insights that go beyond the surface - delivering real-world cybersecurity intelligence from trusted professionals."
+            // ctaText="Explore Our Expertise"
+            // link="#assessments"
+            // ctaText2="Discuss Your Needs"
+            // className="bg-background text-foreground"
+            // link2="/contact"
+         />
+         <section className="min-h-screen px-4 py-8 md:px-12 bg-background text-foreground">
          <div className="max-w-screen-xl mx-auto">
-            <h1 className="text-5xl font-bold mb-10 text-center gap-2">
+            {/* <h1 className="text-5xl font-bold mb-10 text-center gap-2">
                Resources
-            </h1>
+            </h1> */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                {reports.map((report, index) => (
                   <ResourceCard key={index} {...report} />
@@ -46,5 +59,7 @@ export default function ResourcesPage() {
             </div>
          </div>
       </section>
+      </>
+      
    )
 }

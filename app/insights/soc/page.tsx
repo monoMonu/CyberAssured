@@ -1,7 +1,20 @@
 // import Image from 'next/image'
 
+import HeroBanner from "@/components/HeroBanner";
+
 export default function PhishingPage() {
   return (
+    <>
+    <HeroBanner
+            imageUrl="/Image3.png"
+            title="Resources"
+            subtitle=""
+            // ctaText="Explore Our Expertise"
+            // link="#assessments"
+            // ctaText2="Discuss Your Needs"
+            // className="bg-background text-foreground"
+            // link2="/contact"
+         />
     <main className="bg-white text-gray-900 px-4 sm:px-8 md:px-16 py-24">
       <div className="max-w-4xl mx-auto">
 
@@ -202,5 +215,7 @@ export default function PhishingPage() {
         </article>
       </div>
     </main>
+    </>
+    
   )
 }
