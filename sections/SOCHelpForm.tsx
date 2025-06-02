@@ -13,6 +13,8 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
+import ManagedServicesCard from "@/components/ManagedServicesCard";
 
 const budgetOptions = ["< $10,000", "$10,000 - $50,000", "$50,000 - $100,000", "> $100,000"];
 const deviceOptions = ["1-50", "51-200", "201-1000", ">1000"];
@@ -52,6 +54,7 @@ type SocFormValues = {
    threats: string[];
 };
 
+
 export default function SocForm() {
    const form = useForm<SocFormValues>({
       defaultValues: {
@@ -64,9 +67,25 @@ export default function SocForm() {
       },
    });
 
+   const [showModal, setShowModal] = useState(false);
+
    function onSubmit(values: SocFormValues) {
-      console.log(values);
+  // Basic manual validation (optional, since react-hook-form already validates)
+   if (
+      values.budget &&
+      values.devices &&
+      values.maturity &&
+      values.manpower &&
+      values.needs.length > 0 &&
+      values.threats.length > 0
+   ) {
+      setShowModal(true);
+      console.log("Form submitted successfully:", values);
+   } else {
+      alert("Please fill all required fields.");
+      }
    }
+
 
    return (
       <div className="max-w-screen-xl mx-auto lg:px-12 px-4 py-10 mb-10 shadow-lg bg-muted">
@@ -110,6 +129,7 @@ export default function SocForm() {
                            key={item}
                            control={form.control}
                            name="needs"
+                           rules={{ required: "Please select at least one business need." }}
                            render={({ field }) => (
                               <FormItem className="flex items-center space-x-2">
                                  <FormControl>
@@ -132,6 +152,7 @@ export default function SocForm() {
                            key={item}
                            control={form.control}
                            name="threats"
+                           rules={{ required: "Please select at least one business need." }}
                            render={({ field }) => (
                               <FormItem className="flex items-center space-x-2">
                                  <FormControl>
@@ -228,6 +249,21 @@ export default function SocForm() {
                <Button type="submit">Submit</Button>
             </form>
          </Form>
+         {showModal && (
+            <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
+               <div className="bg-white p-6 rounded-xl max-w-7xl w-full max-h-[90vh] overflow-y-auto relative">
+                  <button
+                  className="absolute top-4 right-4 text-gray-700 hover:text-red-500 text-3xl"
+                  onClick={() => setShowModal(false)}
+                  >
+                  ×
+                  </button>
+                  <ManagedServicesCard />
+               </div>
+            </div>
+            )}
       </div>
    );
 }
+
+
