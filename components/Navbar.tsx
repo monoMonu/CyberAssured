@@ -46,7 +46,8 @@ export default function Navbar() {
          )}
       >
          {/* logo */}
-         <Link href="/" className="flex items-center font-bold text-2xl text-[#220E6F]">
+         <Link href="/" 
+         className={cn("flex items-center font-bold text-2xl", isScrolled ? "text-[#220E6F]" : "text-white")}>
             <Image
             src="/logo_only.png"
             alt="CyberAssured Logo"
