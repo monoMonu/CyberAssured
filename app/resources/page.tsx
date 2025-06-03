@@ -7,7 +7,7 @@ const reports = [
     title: "The Ultimate Guide to Cybersecurity Certifications for Young Professionals",
     description:
     "In today’s digital age, cybersecurity is no longer just an IT concern—it’s a critical business priority. With threats evolving rapidly, organizations seek skilled professionals to protect their systems and data. For young professionals, the right certifications can launch or advance a cybersecurity career.",
-    imageUrl: "/expertServices/expertImage2.png",
+    imageUrl: "/expertServices/expertImage1.png",
     link: "/resources/blog/blog1",
   },
   {
@@ -21,7 +21,7 @@ const reports = [
     title: "Cybersecurity Jobs: Key Insights for Professionals in Saudi Arabia and the UAE",
     description:
     "Driven by initiatives like Saudi Vision 2030 and the UAE’s Digital Economy Strategy, the GCC region is rapidly becoming a cybersecurity hub. Discover the growing demand, skill trends, and job opportunities in Riyadh, Dubai, Abu Dhabi, and beyond.",
-    imageUrl: "/expertServices/expertImage1.png",
+    imageUrl: "/expertServices/expertImage2.png",
     link: "/resources/blog/blog3",
   },
   {
